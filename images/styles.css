@@ -1,0 +1,90 @@
+/* definiamo la tipolgia di font e la dimensione per i tag fondamentali */
+/* kind of font and size relating to the basic tags */
+TD {
+	FONT:  11px Tahoma, Verdana, Arial, sans-serif
+}
+TR {
+	FONT:  11px Tahoma, Verdana, Arial, sans-serif
+}
+P {
+	FONT:  11px Tahoma, Verdana, Arial, sans-serif
+}
+DIV {
+	FONT:  11px Tahoma, Verdana, Arial, sans-serif
+}
+
+/* caratteristiche dei link */
+/* property of hyperlinks*/
+A:active {
+	COLOR: #7C641B; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #7C641B; TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #7C641B; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #FF0000; TEXT-DECORATION: none
+}
+.txtContent {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 3px; FONT-SIZE: 0px; VISIBILITY: visible; PADDING-BOTTOM: 0px; OVERFLOW: auto; WIDTH: 260px; COLOR: #000000; PADDING-TOP: 0px; HEIGHT: 213px
+}
+
+
+/* queste classi definiscono gli style per i tag relativi ai moduli ( input, select )*/
+/* these classes are related to the form tags ( input, select )*/
+.form  {
+	font-size : 11px;
+	font-family : Arial, Helvetica, sans-serif;
+	color : #9C6500;
+	border-width : 1;
+	border-style : solid;
+	border-color : #FFFFE7;
+	background-color : #FFFFFF;
+}
+.pulsante  {
+	font-size : 11px;
+	font-family : Tahoma, Verdana, Arial, sans-serif;
+	color : #9C6500;
+	border-width : 1;
+	border-style : solid;
+	border-color : #FFFFE7;
+	background-color : #FFFFFF;
+}
+
+
+/* tale classe definisce gli style per il bordo ed il colore di sfondo delle tabelle */
+/*  this class is related to the edges and to the background colour of the tables */
+.tablemenu  {
+	border-width : 0;
+	border-style : dashed;
+	border-color : #FFFFE7;
+	background-color : #;
+}
+
+/* tale classe definisce uno dei due colori base ovvero il rosso */
+/* basic colour: red */
+.red {
+	COLOR: #ff0000
+}
+
+/* tale classe definisce l'altro colore base ovvero il blue */
+/* basic colour: blue */
+.blue{
+	COLOR: #9C6500
+}
+.green {	
+	color: #006600;
+	font-weight: bold;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+body { 
+	color: #000000; 
+	margin: 0px; 
+	}
+p { 
+	margin-top: 0px; 
+	text-align: none;
+	}
