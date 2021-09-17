@@ -17,7 +17,7 @@ if (isset($_POST['guest_new']))
 			or die ("<SCRIPT> alert('Data tidak masuk database / data telah ada !!'); history.back(); </SCRIPT>");
 		if ($berhasil)
 		{
-			header ("location: index.php?menu=guestrelations&thanks=1");
+			header ("location: location.php");
 		}
 	exit;
 }
@@ -88,7 +88,7 @@ if (isset($_POST['reservation_new']))
 	{	
 	
 		$perintah="insert into tb_pesan (tgl_pesan, no_pesan, email, phone, nama, kota, alamat, tgl_cekin, tgl_cekout, id_tipe)
-				values ('$tgl_pesan','$_POST[no_pesan]','$_POST[required_email]','$_POST[equired_phone]','$_POST[required_nama]','$_POST[required_city]',
+				values ('$tgl_pesan','$_POST[no_pesan]','$_POST[required_email]','$_POST[required_phone]','$_POST[required_nama]','$_POST[required_city]',
 				'$_POST[required_alamat]','$_POST[tgl_cci]','$_POST[tgl_cco]','$_POST[id_tipe]')";
 
 		$berhasil=mysqli_query($connect,$perintah) 

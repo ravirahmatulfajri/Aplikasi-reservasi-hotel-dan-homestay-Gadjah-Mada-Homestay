@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Hotel</title>
+        <title>Mardliyyah Islamic Center</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -70,10 +70,9 @@
                                             </ul>
                                         <li><a href="#">Another</a>
                                             <ul class="submenu">
-                                                <li><a href="location.php">Locations</a></li>
+                                                <li><a href="location.php">Locations & Guest Relations</a></li>
                                                 <li><a href="around.php">Arround</a></li>
                                                 <li><a href="news.php">News</a></li>
-                                                <li><a href="guestrelations.php">Guest Relations</a></li>
                                             </ul>
                                     </ul>
                                 </nav>
@@ -112,6 +111,7 @@
             </div>
         </div>
         <!-- slider Area End-->
+        
 <?php 
 include "incl/connect.inc.php" ;
 			
@@ -129,71 +129,138 @@ while($data = mysqli_fetch_array($qry)) {
 					$tipe_kamar=$data['tipe_kamar'];	
 					$harga=$data['harga'];
 					$fasilitas=$data['fasilitas'];
-					$pict=$data['pict'];
+                    $pict=$data['pict'];
+                    
 ?>
-					
-					  <table width="0%" border="0" align="center" cellspacing="0" cellpadding="0">              
-					  <tr> 
-						<td><table width="0%" border="0" cellspacing="0" cellpadding="0">
-							<tr> 
-							  <td width="7"><img src="images/gif/corner1-1.gif" tppabs="images/images/gif/corner1.gif" width="7" height="20"></td>
-							  <td width="218" background="images/gif/corner2-1.gif" tppabs="images/images/gif/corner2.gif">&nbsp;</td>
-							  <td width="37"><img src="images/gif/corner3.gif" tppabs="images/images/gif/corner3.gif" width="37" height="20"></td>
-							  <td width="219" background="images/gif/corner2-1.gif" tppabs="images/images/gif/corner2.gif">&nbsp;</td>
-							  <td width="7"><img src="images/gif/corner4-1.gif" tppabs="images/images/gif/corner4.gif" width="7" height="20"></td>
-							</tr>
-						  </table>
-						  <table width="490" border="0" align="center" cellpadding="0" cellspacing="0">
-							<tr> 
-							  <td width="7" background="images/gif/corner5-1.gif" tppabs="images/images/gif/corner5.gif">&nbsp;</td>
-							  <td width="476" valign="top"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
-								  <tr> 
-									<td class="green">
-									  <p class="red"><strong><?php echo"$tipe_kamar" ?></strong></p>
-									  <p class="green">Room Rate : <strong>Rp.<?php echo"$harga" ?>,-/Net/Room/Night</strong></p>
-									  <p class="green">Fasilitas Ruangan : <br /><?php echo"$fasilitas" ?></p>                              
-									  <p align="justify"><font size="2" face="Arial, Helvetica, sans-serif"><br>
-									</font></p></td>
-								    <td class="green">
-									<?php
+                
+<!--================ Accomodation Area  =================-->
+ <!--================Blog Area =================-->
+ <!-- <section class="blog_area section-padding"> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mb-5 mb-lg-0">
+                    <div class="blog_left_sidebar">
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0">
+                                
+                                <!-- <span class="responsive"><img src="assets/img/rooms/room1.jpg" > -->
+                                <?php
+                                
 									echo"<a href='index.php?menu=reservations&id=$id_tipe'>
-									<img src='$pict' width='240' height='136' /></a>";
-									?></td>
-								  </tr>
-								  <tr>
-									<td colspan="2"><div align="right"><?php echo"<a href='index.php?menu=reservations&id=$id_tipe'><img src='images/gif/button_book_now.gif'  width='102' height='25' border='0'></a>"; ?></div></td>
-								  </tr>
-								</table></td>
-							  <td width="7" background="images/gif/corner6-1.gif" tppabs="images/images/gif/corner6.gif">&nbsp;</td>
-							</tr>
-							<tr> 
-							  <td background="images/gif/corner7-1.gif" tppabs="images/images/gif/corner7.gif"><img src="images/gif/spacer.gif" tppabs="images/images/gif/spacer.gif" width="1" height="7"></td>
-							  <td background="images/gif/corner8-1.gif" tppabs="images/images/gif/corner8.gif"><img src="images/gif/spacer.gif" tppabs="images/images/gif/spacer.gif" width="1" height="7"></td>
-							  <td background="images/gif/corner9-1.gif" tppabs="images/images/gif/corner9.gif"><img src="images/gif/spacer.gif" tppabs="images/images/gif/spacer.gif" width="1" height="7"></td>
-							</tr>
-						  </table></td>
-					  </tr>
-					</table>			 	
+                                    <img src='$pict' width='710' height='350'/></a>";
+                                    
+                                    ?>
+                                    <!-- <img src="$pict" width='710' height='350' /> -->
+                                </span>
+                                    </td>
+                                   
+                                 <!-- <a href="#" class="blog_item_date"> -->
+                                    <!-- <h3>CLICK</h3>
+                                    <p>PICTURE</p> -->
+                                </a> 
+                            </div>
+
+                            <!-- <div class="blog_details">
+                                <a class="d-inline-block" href="singlenews.php">
+                                    <h2>kkk
+                                    </h2>
+                                </a>
+                            </div> -->
+                            
+                        </article>
+         
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <!-- <div class="blog_right_sidebar"> -->
+                        
+                        <aside class="single_sidebar_widget post_category_widget">
+                            <br><br>
+                                <h1 class="red"><?php echo"$tipe_kamar" ?></h1><br>
+                               
+
+                                <ul class="list cat-list">
+                                    <li>
+                                        <a href="index.php?menu=reservations&id=$id_tipe" class="d-flex">
+                                        
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </aside>
+
+                        <aside class="single_sidebar_widget post_category_widget">
+                            <h5 class="green">Room Rate : <?php echo"$harga" ?></h1>
+                            <ul class="list cat-list">
+                                <li>
+                                    <a href="index.php?menu=reservations&id=$id_tipe" class="d-flex">
+                                       
+                                        
+                                    </a>
+                                </li>
+                            </ul>
+                        </aside>
+
+                        <aside class="single_sidebar_widget post_category_widget">
+                            <h5 class="green">Fasilitas Ruangan : <?php echo"$fasilitas" ?></h5>
+                            <ul class="list cat-list">
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <!-- <p class="green">Fasilitas Ruangan : <br /><?php echo"$fasilitas" ?></p> -->
+                                        
+                                    </a>
+                                </li>
+                            </ul>
+                        </aside>
+                        <br><br>
+                        
+        <!-- <a href="index.php?menu=reservations&id=$id_tipe" class="btn more-btn1">Book Now <i class="ti-angle-right"></i> </a> -->
+       <a class="btn more-btn1"
+        <?php echo"<a href='index.php?menu=reservations&id=$id_tipe'>Book Now</a>"; ?></div>
+       </a>
+        <!-- <tr>
+			<td colspan="2"><div align="right"><?php echo"<a href='index.php?menu=reservations&id=$id_tipe'><img src='images/gif/button_book_now.gif'  width='102' height='25' border='0'></a>"; ?></div></td>
+		</tr> -->
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================Blog Area =================-->
+               
                     <?php 
 } ?>
-</td>
-			 </tr> 		  
-          </table></td>
-          <td background="images/gif/corner_2bgA.gif" tppabs="images/images/gif/corner_2bgA.gif">&nbsp;</td>
-        </tr>
-        <tr>
-          <td><img src="images/gif/corner_3-1.gif" tppabs="images/images/gif/corner_3.gif" width="23" height="23"></td>
-          <td background="images/gif/corner_3bg.gif" tppabs="images/images/gif/corner_3bg.gif">&nbsp;</td>
-          <td><img src="images/gif/corner_4-1.gif" tppabs="images/images/gif/corner_4.gif" width="25" height="23"></td>
-        </tr>
-</table>
-<footer>
-       
+
+
+                   
 
 </script></html>
 <!-- JS here -->
 </main>
    <footer>
+       <!-- Gallery img Start-->
+    <div class="gallery-area fix">
+            <div class="container-fluid p-0">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="gallery-active owl-carousel">
+                            <div class="gallery-img">
+                                <a href="#"><img src="assets/img/gallery/gallery1.jpg" alt=""></a>
+                            </div>
+                            <div class="gallery-img">
+                                <a href="#"><img src="assets/img/gallery/gallery2.jpg" alt=""></a>
+                            </div>
+                            <div class="gallery-img">
+                                <a href="#"><img src="assets/img/gallery/gallery3.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Gallery img End-->
       <!-- Footer Start-->
        <div class="footer-area black-bg footer-padding">
            <div class="container">
@@ -275,6 +342,8 @@ while($data = mysqli_fetch_array($qry)) {
        <!-- Footer End-->
    </footer>
    
+<!-- JS here -->
+
 		<!-- All JS Custom Plugins Link Here here -->
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
 		

@@ -70,10 +70,9 @@
                                             </ul>
                                         <li><a href="#">Another</a>
                                             <ul class="submenu">
-                                                <li><a href="location.php">Locations</a></li>
+                                                <li><a href="location.php">Locations & Guest Relations</a></li>
                                                 <li><a href="around.php">Arround</a></li>
                                                 <li><a href="news.php">News</a></li>
-                                                <li><a href="guestrelations.php">Guest Relations</a></li>
                                             </ul>
                                     </ul>
                                 </nav>
@@ -112,7 +111,172 @@
             </div>
         </div>
         <!-- slider Area End-->
-<?php 
+        
+        <!-- Dining Start -->
+        <div class="dining-area dining-padding-top">
+            <!-- Single Left img -->
+            <div class="single-dining-area left-img">
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <div class="col-lg-8 col-md-8">
+                            <div class="dining-caption">
+                                <span>Our Facilities</span>
+                                <h3>Free Breakfast</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam, quis nostrud.</p>
+                                <a href="#" class="btn border-btn">Learn More <i class="ti-angle-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- single Right img -->
+            <div class="single-dining-area right-img">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-lg-8 col-md-8">
+                            <div class="dining-caption text-right">
+                                <span>Our Facilities</span>
+                                <h3>Free newspaper</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam, quis nostrud.</p>
+                                <a href="#" class="btn border-btn">Learn More  <i class="ti-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        <div class="single-dining-area left-img">
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <div class="col-lg-8 col-md-8">
+                            <div class="dining-caption">
+                                <span>Our Facilities</span>
+                                <h3>Drugstore</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam, quis nostrud.</p>
+                                <a href="#" class="btn border-btn">Learn More <i class="ti-angle-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- single Right img -->
+            <div class="single-dining-area right-img">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-lg-8 col-md-8">
+                            <div class="dining-caption text-right">
+                                <span>Our Facilities</span>
+                                <h3>Laundry and dry cleaning service</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam, quis nostrud.</p>
+                                <a href="#" class="btn border-btn">Learn More  <i class="ti-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="single-dining-area left-img">
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <div class="col-lg-8 col-md-8">
+                            <div class="dining-caption">
+                                <span>Our Facilities</span>
+                                <h3>Tour and travel desk</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam, quis nostrud.</p>
+                                <a href="#" class="btn border-btn">Learn More <i class="ti-angle-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- single Right img -->
+            <div class="single-dining-area right-img">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-lg-8 col-md-8">
+                            <div class="dining-caption text-right">
+                                <span>Our Facilities</span>
+                                <h3>Cuci Mobil Gratis bagi tamu hotel</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam, quis nostrud.</p>
+                                <a href="#" class="btn border-btn">Learn More  <i class="ti-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        <div class="single-dining-area left-img">
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <div class="col-lg-8 col-md-8">
+                            <div class="dining-caption">
+                                <span>Our Facilities</span>
+                                <h3>Car rental service</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam, quis nostrud.</p>
+                                <a href="#" class="btn border-btn">Learn More <i class="ti-angle-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- single Right img -->
+            <div class="single-dining-area right-img">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-lg-8 col-md-8">
+                            <div class="dining-caption text-right">
+                                <span>Our Facilities</span>
+                                <h3>All major credit cards accepted</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam, quis nostrud.</p>
+                                <a href="#" class="btn border-btn">Learn More  <i class="ti-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="single-dining-area left-img">
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <div class="col-lg-8 col-md-8">
+                            <div class="dining-caption">
+                                <span>Our Facilities</span>
+                                <h3>Check out time 12.00 noon</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam, quis nostrud.</p>
+                                <a href="#" class="btn border-btn">Learn More <i class="ti-angle-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- single Right img -->
+            <div class="single-dining-area right-img">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-lg-8 col-md-8">
+                            <div class="dining-caption text-right">
+                                <span>Our Facilities</span>
+                                <h3>Parkir kendaraan yang aman dan luas</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam, quis nostrud.</p>
+                                <a href="#" class="btn border-btn">Learn More  <i class="ti-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="single-dining-area left-img">
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <div class="col-lg-8 col-md-8">
+                            <div class="dining-caption">
+                                <span>Our Facilities</span>
+                                <h3>Room service is available 24 hours</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam, quis nostrud.</p>
+                                <a href="#" class="btn border-btn">Learn More <i class="ti-angle-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!-- Dining End -->
+<!-- <?php 
 include "incl/connect.inc.php" ;
 			
 $kueri = "select * from tb_manag_site where menu = 'Facilities'";
@@ -143,7 +307,28 @@ echo"$isi_menu";
           <td background="images/gif/corner_3bg.gif" tppabs="images/images/gif/corner_3bg.gif">&nbsp;</td>
           <td><img src="images/gif/corner_4-1.gif" tppabs="images/images/gif/corner_4.gif" width="25" height="23"></td>
         </tr>
-</table>
+</table> -->
+	<!-- Gallery img Start-->
+    <div class="gallery-area fix">
+            <div class="container-fluid p-0">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="gallery-active owl-carousel">
+                            <div class="gallery-img">
+                                <a href="#"><img src="assets/img/gallery/gallery1.jpg" alt=""></a>
+                            </div>
+                            <div class="gallery-img">
+                                <a href="#"><img src="assets/img/gallery/gallery2.jpg" alt=""></a>
+                            </div>
+                            <div class="gallery-img">
+                                <a href="#"><img src="assets/img/gallery/gallery3.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Gallery img End-->
  <!-- Footer Start-->
  <div class="footer-area black-bg footer-padding">
            <div class="container">
@@ -222,11 +407,11 @@ echo"$isi_menu";
                </div>
            </div>
        </div>
+       
        <!-- Footer End-->
    </footer>
 
 <!-- JS here -->
-	
 		<!-- All JS Custom Plugins Link Here here -->
         <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
 		
