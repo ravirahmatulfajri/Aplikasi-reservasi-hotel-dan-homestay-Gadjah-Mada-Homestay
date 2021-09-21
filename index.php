@@ -177,9 +177,9 @@ $qr  = mysqli_query($connect, $kueri);
                     <div class=" col-xl-4 col-lg-4">
                         <div class="customer-caption">
                             <span>Mardliyyah Islamic Center</span>
-                            <h2>Make the customer the hero of your story</h2>
+                            <!-- <h2>Make the customer the hero of your story</h2> -->
                             <div class="caption-details">
-                                <p class="pera-dtails">Lorem ipsum dolor sit amet, consectetur adipisic- ing elit, sed do eiusmod tempor inc. </p>
+                                <!-- <p class="pera-dtails">Lorem ipsum dolor sit amet, consectetur adipisic- ing elit, sed do eiusmod tempor inc. </p> -->
                                 <?php
                                   while ($data = mysqli_fetch_array($qr)) :
                                       $isi_menu = $data['isi_menu'];
@@ -188,7 +188,7 @@ $qr  = mysqli_query($connect, $kueri);
                                       <?= $isi_menu ?>
 
                                   <?php endwhile; ?> </p>
-                                <a href="#" class="btn more-btn1">Learn More <i class="ti-angle-right"></i> </a>
+                                <a href="about.php" class="btn more-btn1">Learn More <i class="ti-angle-right"></i> </a>
                             </div>
                         </div>
                     </div>
@@ -228,6 +228,21 @@ $qr  = mysqli_query($connect, $kueri);
                             <div class="gallery-img">
                                 <a href="#"><img src="assets/img/gallery/gallery3.jpg" alt=""></a>
                             </div>
+                            <!-- <div class="gallery-img">
+                                <a href="#"><img src="assets/img/gallery/VIPRoomA.jpg" alt=""></a>
+                            </div>
+                            <div class="gallery-img">
+                                <a href="#"><img src="assets/img/gallery/VIPRoomB.jpg" alt=""></a>
+                            </div>
+                            <div class="gallery-img">
+                                <a href="#"><img src="assets/img/gallery/StandardRoomA.jpg" alt=""></a>
+                            </div>
+                            <div class="gallery-img">
+                                <a href="#"><img src="assets/img/gallery/StandardRoomB.jpg" alt=""></a>
+                            </div>
+                            <div class="gallery-img">
+                                <a href="#"><img src="assets/img/gallery/FamilyRoom.jpg" alt=""></a>
+                            </div> -->
                         </div>
                     </div>
                 </div>

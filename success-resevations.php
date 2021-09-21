@@ -70,7 +70,7 @@ $tipe_kamar=$data['tipe_kamar'];
 									  ?>	</td><br>
                               
                                 <p>Segera lakukan pembayaran<br> Sebelum batas waktu yang ditentukan <br>Ya.</p>
-                                <a href="#" class="btn border-btn">Learn More  <i class="ti-angle-left"></i></a>
+                                <a href="accommodation.php" class="btn border-btn">Pesan Lagi  <i class="ti-angle-left"></i></a>
                             </div>
                         </div>
                     </div>

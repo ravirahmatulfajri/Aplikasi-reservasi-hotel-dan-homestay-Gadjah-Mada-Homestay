@@ -1,0 +1,7 @@
+/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+'use strict';var a=window.location.hash,b=window.location.search,c=window.location.pathname.split("/");c.splice(-1,1);window.STATIC_PREFIX=c.join("/")+"/";var d=document.createElement("base");d.setAttribute("href",window.location.href);document.head.appendChild(d);RegExp("^/static/(|wasm/|wasm_threaded/|dev/)9.145.0.2").test(window.location.pathname)?window.history.replaceState(null,"","../"):window.history.replaceState(null,"",".");var e=window.location.pathname;
+RegExp("^/static/(|wasm/|wasm_threaded/|dev/)").test(e)&&(e=e.replace(/^\/static\/(wasm\/|wasm_threaded\/|dev\/|)/,"/web/"));window.PATH_PREFIX=e;a&&1<a.length&&(e+=a.substr(1));b&&1<b.length&&"/"==b[b.length-1]&&(b=b.substr(0,b.length-1));e="/"+e.replace(/^\/*/g,"");window.history.replaceState(null,"",e+b);
