@@ -82,6 +82,17 @@ Class Hub {
 	function tutup() {
 		return mysql_free_result($this->hasil);
 	}
+
+	public function tampil($id = null){
+		$db = $this->mysqli->conn;
+		$sql = "SELECT * FROM tb_pesan";
+		if($id !=null){
+			$sql .= " WHERE id_pesan = $id";
+
+		}
+		$query = $db->query($sql) or die ($db->error);
+		return $query;
+	} 
 }
 
 ?>

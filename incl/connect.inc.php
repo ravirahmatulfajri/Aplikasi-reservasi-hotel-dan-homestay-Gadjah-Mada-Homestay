@@ -11,6 +11,6 @@
 
 	// memilih database pada server
 	// mysqli_select_db("db_hotel1") or die ( " ==> CONNECTION INVALID WITH DATABASE  <==");
-	$database = mysqli_select_db($connect, 'db_mardliyyah');
+	$database = mysqli_select_db($connect, 'db_homestay');
 	
 ?>

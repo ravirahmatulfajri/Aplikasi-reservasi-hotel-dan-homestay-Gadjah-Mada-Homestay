@@ -143,7 +143,7 @@ $outyear = date("Y", $checkout);
             <div class="row container-fluid pt-45 mb-30">
               <div class="single-select-box col-md-6 mb-30">
                 <div class="boking-tittle">
-                  <span>Tipe Kamar</span>
+                  <span>Tipe</span>
                 </div>
                 <div class="select-this">
                   <div>

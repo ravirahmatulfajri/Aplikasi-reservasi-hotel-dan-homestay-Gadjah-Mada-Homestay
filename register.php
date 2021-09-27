@@ -139,7 +139,7 @@ $tgl_cco = $_GET['out'];
                        </div>
                     
           
-                             <td height="25" class="blue">Nomor Kamar <span class="red"> *</span></td>
+                             <td height="25" class="blue">Status Kamar <span class="red"> *</span></td>
                              <td class='blue'>
                    <br>
                              <?php
@@ -160,11 +160,11 @@ $tgl_cco = $_GET['out'];
                                    
                                    if ($ada_apa_enggak >= 1 )
                                    {
-                                     echo"<input type='checkbox' name='kamar_in_user' checked='checked' disabled='disabled' />Kamar No $nm_kamar (status = <span class='red'>use/booking</span>)<br />";  
+                                     echo"<input type='checkbox' name='kamar_in_user' checked='checked' disabled='disabled' />Kamar  $nm_kamar (status = <span class='red'>use/booking</span>)<br />";  
                                    }	
                                    else
                                    {
-                                     echo"<input type='checkbox' name='required_id_kamar[]' id='required_id_kamar' value='$id_kamar' />Kamar No $nm_kamar (status = <span class='green'>kosong</span>)<br />";  
+                                     echo"<input type='checkbox' name='required_id_kamar[]' id='required_id_kamar' value='$id_kamar' />Kamar $nm_kamar (status = <span class='green'>kosong</span>)<br />";  
                                    }
                                }else
                                {

@@ -1,6 +1,6 @@
 <?php
 include "incl/connect.inc.php" ;
-include_once("incl/function.php");
+// include_once("incl/function.php");
 
 $kueri = "select a.*, b.tipe_kamar from tb_pesan a, tb_kamar_tipe b where a.id_tipe = b.id_tipe and a.no_pesan = '$_GET[no_pesan]'";
 $qry  = mysqli_query($connect,$kueri);
@@ -71,6 +71,10 @@ $tipe_kamar=$data['tipe_kamar'];
                               
                                 <p>Segera lakukan pembayaran<br> Sebelum batas waktu yang ditentukan <br>Ya.</p>
                                 <a href="accommodation.php" class="btn border-btn">Pesan Lagi  <i class="ti-angle-left"></i></a>
+                                <a href="cetak.php" class="btn border-btn">Cetak Bukti Pesanan  <i class="ti-angle-left"></i></a>
+                                <!-- index.php?menu=success-resevations&no_pesan=$_POST[no_pesan] -->
+                               
+                                
                             </div>
                         </div>
                     </div>
