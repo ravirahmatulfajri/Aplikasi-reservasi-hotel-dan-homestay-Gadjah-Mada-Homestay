@@ -1,6 +1,6 @@
 <?php
-include "incl/connect.inc.php";
-include_once("incl/function.php");
+include "./incl/connect.inc.php";
+include_once("./incl/function.php");
 
 $kueri = "select * from tb_kamar_tipe where id_tipe = $_GET[id]";
 $qr  = mysqli_query($connect, $kueri);
@@ -45,98 +45,106 @@ $outyear = date("Y", $checkout);
           <div class="booking-wrap d-flex flex-md-column justify-content-between align-items-center align-items-md-start">
 
 
+            <div class="d-flex flex-column flex-md-row row container-fluid pt-45 mb-30">
 
-            <div class="col-6 mb-30">
+              <div class="col-12 col-md-6 mb-30">
 
-              <div class="boking-tittle">
-                <span>Tgl Chek In</span>
+                <div class="boking-tittle">
+                  <span>Tgl Chek In</span>
+                </div>
+
+                <style>
+                  .nice-select.mx-2 {
+                    padding: 0 2rem 0 1rem;
+                  }
+                </style>
+
+                <div class="d-flex">
+                  <select name="required_tgl_cekin" size="1" class="mx-2">
+                    <?php
+                    for ($i = 1; $i <= 31; $i++) {
+                      if ($i == $indate) {
+                        $selectdate = "selected";
+                      } else {
+                        $selectdate = "";
+                      }
+                      echo "<option value=\"$i\" $selectdate>$i</option>" . "\n";
+                    }
+                    ?>
+                  </select>
+
+                  <select name="required_bln_cekin" size="1" id="bln" class="mx-2">
+                    <?php
+                    for ($i = 1; $i <= 12; $i++) {
+                      if ($i == $inmonth) {
+                        $selectmonth = "selected";
+                      } else {
+                        $selectmonth = "";
+                      }
+                      echo "<option value=\"$i\" $selectmonth>$bulan[$i]</option>" . "\n";
+                    }
+                    ?>
+                  </select>
+                  <select name="required_thn_cekin" size="1" id="thn" class="mx-2">
+                    <?php
+                    for ($i = $inyear; $i <= $inyear + 1; $i++) {
+                      if ($i == $inyear) {
+                        $selectyear = "selected";
+                      } else {
+                        $selectyear = "";
+                      }
+                      echo "<option value=\"$i\" $selectyear>$i</option>" . "\n";
+                    }
+                    ?>
+                  </select>
+                </div>
+
               </div>
 
-              <div class="d-flex">
-                <select name="required_tgl_cekin" size="1" class="mx-2">
-                  <?php
-                  for ($i = 1; $i <= 31; $i++) {
-                    if ($i == $indate) {
-                      $selectdate = "selected";
-                    } else {
-                      $selectdate = "";
-                    }
-                    echo "<option value=\"$i\" $selectdate>$i</option>" . "\n";
-                  }
-                  ?>
-                </select>
+              <div class="col-12 col-md-6 mb-30">
 
-                <select name="required_bln_cekin" size="1" id="bln" class="mx-2">
-                  <?php
-                  for ($i = 1; $i <= 12; $i++) {
-                    if ($i == $inmonth) {
-                      $selectmonth = "selected";
-                    } else {
-                      $selectmonth = "";
-                    }
-                    echo "<option value=\"$i\" $selectmonth>$bulan[$i]</option>" . "\n";
-                  }
-                  ?>
-                </select>
-                <select name="required_thn_cekin" size="1" id="thn" class="mx-2">
-                  <?php
-                  for ($i = $inyear; $i <= $inyear + 1; $i++) {
-                    if ($i == $inyear) {
-                      $selectyear = "selected";
-                    } else {
-                      $selectyear = "";
-                    }
-                    echo "<option value=\"$i\" $selectyear>$i</option>" . "\n";
-                  }
-                  ?>
-                </select>
-              </div>
+                <div class="boking-tittle">
+                  <span>Tgl Cek Out</span>
+                </div>
 
-            </div>
-
-            <div class="col-6 mb-30">
-
-              <div class="boking-tittle">
-                <span>Tgl Cek Out</span>
-              </div>
-
-              <div class="d-flex">
-                <select name="required_tgl_cekout" size="1" id="tgl_cekout" class="mx-2">
-                  <?php
-                  for ($i = 1; $i <= 31; $i++) {
-                    if ($i == $outdate) {
-                      $selectdate = "selected";
-                    } else {
-                      $selectdate = "";
+                <div class="d-flex">
+                  <select name="required_tgl_cekout" size="1" id="tgl_cekout" class="mx-2">
+                    <?php
+                    for ($i = 1; $i <= 31; $i++) {
+                      if ($i == $outdate) {
+                        $selectdate = "selected";
+                      } else {
+                        $selectdate = "";
+                      }
+                      echo "<option value=\"$i\" $selectdate>$i</option>" . "\n";
                     }
-                    echo "<option value=\"$i\" $selectdate>$i</option>" . "\n";
-                  }
-                  ?>
-                </select>
-                <select name="required_bln_cekout" size="1" id="select" class="mx-2">
-                  <?php
-                  for ($i = 1; $i <= 12; $i++) {
-                    if ($i == $outmonth) {
-                      $selectmonth = "selected";
-                    } else {
-                      $selectmonth = "";
+                    ?>
+                  </select>
+                  <select name="required_bln_cekout" size="1" id="select" class="mx-2">
+                    <?php
+                    for ($i = 1; $i <= 12; $i++) {
+                      if ($i == $outmonth) {
+                        $selectmonth = "selected";
+                      } else {
+                        $selectmonth = "";
+                      }
+                      echo "<option value=\"$i\" $selectmonth>$bulan[$i]</option>" . "\n";
                     }
-                    echo "<option value=\"$i\" $selectmonth>$bulan[$i]</option>" . "\n";
-                  }
-                  ?>
-                </select>
-                <select name="required_thn_cekout" size="1" id="select2" class="mx-2">
-                  <?php
-                  for ($i = $outyear; $i <= $outyear + 1; $i++) {
-                    if ($i == $outyear) {
-                      $selectyear = "selected";
-                    } else {
-                      $selectyear = "";
+                    ?>
+                  </select>
+                  <select name="required_thn_cekout" size="1" id="select2" class="mx-2">
+                    <?php
+                    for ($i = $outyear; $i <= $outyear + 1; $i++) {
+                      if ($i == $outyear) {
+                        $selectyear = "selected";
+                      } else {
+                        $selectyear = "";
+                      }
+                      echo "<option value=\"$i\" $selectyear>$i</option>" . "\n";
                     }
-                    echo "<option value=\"$i\" $selectyear>$i</option>" . "\n";
-                  }
-                  ?>
-                </select>
+                    ?>
+                  </select>
+                </div>
               </div>
             </div>
 
