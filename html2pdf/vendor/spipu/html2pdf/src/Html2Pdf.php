@@ -540,7 +540,7 @@ class Html2Pdf
      * @return string content of the PDF, if $dest=S
      * @see    TCPDF::close
      */
-    public function output($name = 'document.pdf', $dest = 'I')
+    public function output($name = 'Bukti pesanan-Homestay.pdf', $dest = 'I')
     {
         // if on debug mode
         if (!is_null($this->debug)) {

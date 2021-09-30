@@ -152,7 +152,7 @@ a:hover,
 
 a,
 button {
-  color: #1696e7;
+  color: #bfa672;
   outline: medium none; }
 
 button:focus, input:focus, input:focus, textarea, textarea:focus {
@@ -267,7 +267,7 @@ label {
   position: relative; }
 
 .theme-overlay::before {
-  background: #1696e7 none repeat scroll 0 0;
+  background: #bfa672 none repeat scroll 0 0;
   content: "";
   height: 100%;
   left: 0;

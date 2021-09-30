@@ -35,26 +35,26 @@
 /* line 86, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_variables.scss */
 .boxed-btn {
   background: #fff;
-  color: #dca73a !important;
+  color: #bfa672 !important;
   display: inline-block;
   padding: 18px 44px;
   font-family: "Lato", sans-serif;
   font-size: 14px;
   font-weight: 400;
   border: 0;
-  border: 1px solid #dca73a;
+  border: 1px solid #bfa672;
   letter-spacing: 3px;
   text-align: center;
-  color: #dca73a;
+  color: #bfa672;
   text-transform: uppercase;
   cursor: pointer;
 }
 
 /* line 102, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_variables.scss */
 .boxed-btn:hover {
-  background: #dca73a;
+  background: #bfa672;
   color: #fff !important;
-  border: 1px solid #dca73a;
+  border: 1px solid #bfa672;
 }
 
 /* line 107, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_variables.scss */
@@ -198,7 +198,7 @@ a:hover,
 /* line 44, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_common.scss */
 a,
 button {
-  color: #1696e7;
+  color: #bfa672;
   outline: medium none;
 }
 
@@ -361,7 +361,7 @@ label {
 
 /* line 160, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_common.scss */
 .theme-overlay::before {
-  background: #1696e7 none repeat scroll 0 0;
+  background: #bfa672 none repeat scroll 0 0;
   content: "";
   height: 100%;
   left: 0;
@@ -380,7 +380,7 @@ label {
 /* line 175, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_common.scss */
 .btn {
   -moz-user-select: none;
-  background: #dca73a;
+  background: #bfa672;
   border: medium none;
   border-radius: 5px;
   color: #fff;
@@ -409,13 +409,13 @@ label {
 /* line 201, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_common.scss */
 .border-btn {
   background: none;
-  border: 2px solid #dca73a;
-  color: #dca73a;
+  border: 2px solid #bfa672;
+  color: #bfa672;
 }
 
 /* line 206, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_common.scss */
 .border-btn i {
-  color: #dca73a !important;
+  color: #bfa672 !important;
   position: relative;
   left: 0;
 }
@@ -2332,7 +2332,7 @@ label {
   position: relative;
   border-style: solid;
   border-width: 3px;
-  border-top-color: #dca73a;
+  border-top-color: #bfa672;
   border-bottom-color: transparent;
   border-left-color: transparent;
   border-right-color: transparent;
@@ -2380,7 +2380,7 @@ label {
 /* line 558, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_common.scss */
 .preloader .pere-text strong {
   font-weight: 800;
-  color: #dca73a;
+  color: #bfa672;
   text-transform: uppercase;
 }
 
@@ -2782,7 +2782,7 @@ label {
 
 /* line 40, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_color.scss */
 .theme-bg {
-  background: #dca73a;
+  background: #bfa672;
 }
 
 /* line 43, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_color.scss */
@@ -2808,7 +2808,7 @@ label {
 
 /* line 62, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_color.scss */
 .theme-color {
-  color: #dca73a;
+  color: #bfa672;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2863,7 +2863,7 @@ label {
 
 /* line 33, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_headerMenu.scss */
 .main-header .main-menu ul li:hover > a {
-  color: #dca73a;
+  color: #bfa672;
 }
 
 /* line 38, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_headerMenu.scss */
@@ -2899,7 +2899,7 @@ label {
 
 /* line 56, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_headerMenu.scss */
 .main-header .main-menu ul ul.submenu > li > a:hover {
-  color: #dca73a;
+  color: #bfa672;
 }
 
 /* line 71, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_headerMenu.scss */
@@ -3322,13 +3322,13 @@ label {
 
 /* line 126, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_booking.scss */
 .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
-  background-color: #dca73a;
+  background-color: #bfa672;
   color: #791616;
 }
 
 /* line 130, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_booking.scss */
 .booking-area .booking-wrap .nice-select.open .list {
-  border: 1px solid #dca73a;
+  border: 1px solid #bfa672;
   width: 100%;
 }
 
@@ -3409,7 +3409,7 @@ label {
 
 /* line 18, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_customer.scss */
 .customer-caption span {
-  color: #dca73a;
+  color: #bfa672;
   font-size: 14px;
   display: block;
   margin-bottom: 13px;
@@ -3823,7 +3823,7 @@ label {
 
 /* line 31, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_room.scss */
 .single-room .room-caption:hover h3 a {
-  color: #dca73a;
+  color: #bfa672;
 }
 
 /* line 36, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_room.scss */
@@ -3843,7 +3843,7 @@ label {
 
 /* line 47, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_room.scss */
 .single-room .room-caption h3 a:hover {
-  color: #dca73a;
+  color: #bfa672;
 }
 
 /* line 54, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_room.scss */
@@ -4049,7 +4049,7 @@ label {
 
 /* line 66, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_dining.scss */
 .dining-area .dining-caption span {
-  color: #dca73a;
+  color: #bfa672;
   text-transform: uppercase;
   margin-bottom: 14px;
   display: block;
@@ -4207,7 +4207,7 @@ label {
 
 /* line 94, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_testimonial.scss */
 .h1-testimonial-active:hover button {
-  background: #dca73a;
+  background: #bfa672;
   color: #fff;
 }
 
@@ -4253,7 +4253,7 @@ label {
 /* line 26, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_blog.scss */
 .blog-area .single-blog .blog-caption .blog-cap-top span {
   color: #fff;
-  background: #dca73a;
+  background: #bfa672;
   padding: 4px 13px;
   text-transform: uppercase;
   font-size: 14px;
@@ -4270,7 +4270,7 @@ label {
 
 /* line 40, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_blog.scss */
 .blog-area .single-blog .blog-caption .blog-cap-top ul li a {
-  color: #dca73a;
+  color: #bfa672;
   font-size: 14px;
 }
 
@@ -4292,7 +4292,7 @@ label {
 
 /* line 59, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_blog.scss */
 .blog-area .single-blog .blog-caption .blog-cap-mid p a:hover {
-  color: #dca73a;
+  color: #bfa672;
 }
 
 /* line 66, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_blog.scss */
@@ -4356,7 +4356,7 @@ label {
 
 /* line 44, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_footer.scss */
 .footer-area .footer-social2 a:hover {
-  background: #dca73a;
+  background: #bfa672;
   color: #fff;
   border: 1px solid transparent;
 }
@@ -4370,7 +4370,7 @@ label {
 
 /* line 58, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_footer.scss */
 .footer-area .footer-pera p span a {
-  color: #dca73a;
+  color: #bfa672;
 }
 
 /* line 60, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_footer.scss */
@@ -4400,7 +4400,7 @@ label {
 
 /* line 81, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_footer.scss */
 .footer-area .footer-tittle ul li a:hover {
-  color: #dca73a;
+  color: #bfa672;
   padding-left: 5px;
 }
 
@@ -4434,7 +4434,7 @@ label {
 
 /* line 112, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_footer.scss */
 .footer-area .info.error {
-  color: #dca73a;
+  color: #bfa672;
 }
 
 /* line 2, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/services.scss */
@@ -4454,7 +4454,7 @@ label {
   content: "";
   width: 75px;
   height: 3px;
-  background: #dca73a;
+  background: #bfa672;
   left: 0;
   top: 52%;
   transform: translateY(-50%);
@@ -4487,7 +4487,7 @@ label {
 
 /* line 14, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_blog_page.scss */
 .blog_area a:hover, .blog_area a :hover {
-  background: -webkit-linear-gradient(131deg, #dca73a 0%, #dca73a 99%);
+  background: -webkit-linear-gradient(131deg, #bfa672 0%, #bfa672 99%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
@@ -5019,7 +5019,7 @@ label {
 
 /* line 544, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_blog_page.scss */
 .blog_details a:hover {
-  color: #dca73a;
+  color: #bfa672;
 }
 
 /* line 549, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_blog_page.scss */
@@ -5087,7 +5087,7 @@ label {
   left: 10px;
   display: block;
   color: #fff;
-  background-color: #dca73a;
+  background-color: #bfa672;
   padding: 8px 15px;
   border-radius: 5px;
 }
@@ -5315,7 +5315,7 @@ label {
 
 /* line 842, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_blog_page.scss */
 .blog_right_sidebar .tag_cloud_widget ul li a:hover {
-  background: #dca73a;
+  background: #bfa672;
   color: #fff !important;
   -webkit-text-fill-color: #fff;
   text-decoration: none;
@@ -5563,7 +5563,7 @@ label {
 
 /* line 1208, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_blog_page.scss */
 .single-post-area .blog-author a:hover {
-  color: #dca73a;
+  color: #bfa672;
 }
 
 /* line 1213, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_blog_page.scss */
@@ -5901,26 +5901,26 @@ label {
 /* line 86, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_variables.scss */
 .boxed-btn {
   background: #fff;
-  color: #dca73a !important;
+  color: #bfa672 !important;
   display: inline-block;
   padding: 18px 44px;
   font-family: "Lato", sans-serif;
   font-size: 14px;
   font-weight: 400;
   border: 0;
-  border: 1px solid #dca73a;
+  border: 1px solid #bfa672;
   letter-spacing: 3px;
   text-align: center;
-  color: #dca73a;
+  color: #bfa672;
   text-transform: uppercase;
   cursor: pointer;
 }
 
 /* line 102, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_variables.scss */
 .boxed-btn:hover {
-  background: #dca73a;
+  background: #bfa672;
   color: #fff !important;
-  border: 1px solid #dca73a;
+  border: 1px solid #bfa672;
 }
 
 /* line 107, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_variables.scss */

@@ -1,6 +1,6 @@
 <?php
-include "./incl/connect.inc.php";
-include_once("./incl/function.php");
+include "incl/connect.inc.php";
+include_once("incl/function.php");
 
 $kueri = "select * from tb_kamar_tipe where id_tipe = $_GET[id]";
 $qr  = mysqli_query($connect, $kueri);
@@ -26,7 +26,7 @@ $outyear = date("Y", $checkout);
 
 <div class="text-center pt-40">
   <h2>
-    Mardliyyah Islamic Centre UGM
+    Gadjah Mada Homestay
   </h2>
   <span>
     YOGYAKARTA - INDONESIA

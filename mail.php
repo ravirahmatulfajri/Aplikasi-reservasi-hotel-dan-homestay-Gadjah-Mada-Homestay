@@ -1,6 +1,6 @@
 <?php
 
-include './incl/config.php';
+include "incl/config.php";
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
