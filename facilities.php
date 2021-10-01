@@ -36,8 +36,7 @@ $qr  = mysqli_query($connect, $kueri);
                     <div class="row justify-content-end">
                         <div class="col-lg-8 col-md-8">
                             <div class="dining-caption">
-                                <span>Gadjah Mada Homestay</span>
-                                <h3>Our Facilities</h3>
+                               
                                 <p><?php
                                   while ($data = mysqli_fetch_array($qr)) :
                                       $isi_menu = $data['isi_menu'];

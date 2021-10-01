@@ -43,6 +43,7 @@ while($data = mysqli_fetch_array($qry)) {
 <!--================ Accomodation Area  =================-->
  <!--================Blog Area =================-->
  <!-- <section class="blog_area section-padding"> -->
+ &nbsp;
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mb-5 mb-lg-0">
@@ -98,7 +99,7 @@ while($data = mysqli_fetch_array($qry)) {
                             </aside>
 
                         <aside class="single_sidebar_widget post_category_widget">
-                            <h5 class="green">Room Rate : <?php echo"$harga" ?></h1>
+                            <h5 class="green">Rate : <?php echo"$harga" ?></h1>
                             <ul class="list cat-list">
                                 <li>
                                     <a href="index.php?menu=reservations&id=$id_tipe" class="d-flex">

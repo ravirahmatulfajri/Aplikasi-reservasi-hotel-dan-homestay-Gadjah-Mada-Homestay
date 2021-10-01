@@ -37,7 +37,7 @@ include "incl/config.php" ;
    <body>
        
     <!-- Preloader Start -->
-    <div id="preloader-active">
+    <!-- <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
@@ -46,7 +46,7 @@ include "incl/config.php" ;
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Preloader Start -->
 
     <header>
@@ -69,15 +69,15 @@ include "incl/config.php" ;
                                         <li><a href="index.php">Home</a></li>
                                         <li><a href="accommodation.php">Accommodations</a></li>
                                         <li><a href="facilities.php">Facilities</a></li>
-                                        <li><a href="#">Info Kamar</a>
+                                        <li><a href="#">Info Status</a>
                                             <ul class="submenu">
-                                                <li><a href="index.php?menu=lihatkamar">Lihat Kamar</a></li>
+                                                <li><a href="index.php?menu=lihatkamar">Lihat Status Homestay</a></li>
                                                 <li><a href="index.php?menu=daftartamu">Daftar Tamu</a></li>
                                                 <li><a href="index.php?menu=daftarorder">Daftar Order</a></li>
                                             </ul>
                                         <li><a href="#">Another</a>
                                             <ul class="submenu">
-                                                <li><a href="location.php">Locations & Guest Relations</a></li>
+                                                <li><a href="location.php">Locations</a></li>
                                                 <li><a href="around.php">Arround</a></li>
                                                 <li><a href="news.php">News</a></li>
                                             </ul>

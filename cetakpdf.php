@@ -2,6 +2,29 @@
 include "incl/connect.inc.php" ;
 
 
+// $id_pendaftar = $_GET['no_pesan'];
+
+// echo $id_pendaftar;
+// die;
+// $sql_pendaftar = "SELECT * FROM tb_pesan id = '$id_pendaftar'";
+// $result_pendaftar = mysqli_query($connect, $sql_pendaftar);
+// $data_pendaftar = mysqli_fetch_array($result_pendaftar);
+
+// //cek hasil
+// if(!$result_pendaftar){
+//   die('Query Error : '. mysqli_error($connect));
+// }
+
+// $sql_nilai = "SELECT * FROM tb_pesan id = '$id_pendaftar'";
+// $result_nilai = mysqli_query($connect, $sql_nilai);
+// $data_nilai = mysqli_fetch_array($result_nilai);
+
+// //cek hasil
+// if(!$result_nilai){
+//   die('Query Error : '. mysqli_error($connect));
+// }
+
+
 $query = mysqli_query($connect, "Select * FROM tb_pesan");
 while($data = mysqli_fetch_array($query)){
 $id_pesan = $data['id_pesan'];
@@ -47,7 +70,8 @@ $cetak = "
           Kota : <b>$kota<br /></b><br>
           Tanggal Check In : <b>$tgl_cekin<br /></b><br>
           Tanggal Check Out : <b>$tgl_cekout<br /></b><br>
-          Nomor Kamar : <b>$nm_kamar<br /></b>
+          Tipe : <b>$nm_kamar<br /></b>
+          
 </body>
 </html>
 ";

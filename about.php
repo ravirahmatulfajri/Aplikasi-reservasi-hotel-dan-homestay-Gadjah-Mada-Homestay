@@ -33,8 +33,9 @@ $qr  = mysqli_query($connect, $kueri);
 			<div class="section-top-border">
 				<center><h1 class="mb-30">Gadjah Mada Homestay</h1></center>
 				<div class="row">
-					<div class="col-md-3">
-						<img src="assets/img/elements/h1_hero.jpg" alt="" class="img-fluid">
+					<!-- <div class="col-md-12"> -->
+                    <div class="col-md-3">
+						<img src="assets/img/about/h1_hero.jpg" alt="" class="img-fluid">
 					</div>
 					<div class="col-md-9 mt-sm-20">
                     <?php
@@ -54,43 +55,43 @@ $qr  = mysqli_query($connect, $kueri);
 				<h2>Image Gallery</h2>
 				<div class="row gallery-item">
 					<div class="col-md-4">
-						<a href="assets/img/elements/g1.jpg" class="img-pop-up">
-							<div class="single-gallery-image" style="background: url(assets/img/elements/g1.jpg);"></div>
+						<a href="assets/img/about/g1.jpg" class="img-pop-up">
+							<div class="single-gallery-image" style="background: url(assets/img/about/g1.jpg);"></div>
 						</a>
 					</div>
 					<div class="col-md-4">
-						<a href="assets/img/elements/g2.jpg" class="img-pop-up">
-							<div class="single-gallery-image" style="background: url(assets/img/elements/g2.jpg);"></div>
+						<a href="assets/img/about/g2.jpg" class="img-pop-up">
+							<div class="single-gallery-image" style="background: url(assets/img/about/g2.jpg);"></div>
 						</a>
 					</div>
 					<div class="col-md-4">
-						<a href="assets/img/elements/g3.jpg" class="img-pop-up">
-							<div class="single-gallery-image" style="background: url(assets/img/elements/g3.jpg);"></div>
+						<a href="assets/img/about/g3.jpg" class="img-pop-up">
+							<div class="single-gallery-image" style="background: url(assets/img/about/g3.jpg);"></div>
 						</a>
 					</div>
 					<div class="col-md-6">
-						<a href="assets/img/elements/g4.jpg" class="img-pop-up">
-							<div class="single-gallery-image" style="background: url(assets/img/elements/g4.jpg);"></div>
+						<a href="assets/img/about/g4.jpg" class="img-pop-up">
+							<div class="single-gallery-image" style="background: url(assets/img/about/g4.jpg);"></div>
 						</a>
 					</div>
 					<div class="col-md-6">
-						<a href="assets/img/elements/g5.jpg" class="img-pop-up">
-							<div class="single-gallery-image" style="background: url(assets/img/elements/g5.jpg);"></div>
+						<a href="assets/img/about/g5.jpg" class="img-pop-up">
+							<div class="single-gallery-image" style="background: url(assets/img/about/g5.jpg);"></div>
 						</a>
                     </div>
                    <div class="col-md-4">
-						<a href="assets/img/elements/g6.jpg" class="img-pop-up">
-							<div class="single-gallery-image" style="background: url(assets/img/elements/g6.jpg);"></div>
+						<a href="assets/img/about/g6.jpg" class="img-pop-up">
+							<div class="single-gallery-image" style="background: url(assets/img/about/g6.jpg);"></div>
 						</a>
 					</div>
 					<div class="col-md-4">
-						<a href="assets/img/elements/g7.jpg" class="img-pop-up">
-							<div class="single-gallery-image" style="background: url(assets/img/elements/g7.jpg);"></div>
+						<a href="assets/img/about/g7.jpg" class="img-pop-up">
+							<div class="single-gallery-image" style="background: url(assets/img/about/g7.jpg);"></div>
 						</a>
 					</div>
 					<div class="col-md-4">
-						<a href="assets/img/elements/g8.jpg" class="img-pop-up">
-							<div class="single-gallery-image" style="background: url(assets/img/elements/g8.jpg);"></div>
+						<a href="assets/img/about/g8.jpg" class="img-pop-up">
+							<div class="single-gallery-image" style="background: url(assets/img/about/g8.jpg);"></div>
 						</a>
                     </div>
 				</div>
@@ -107,13 +108,13 @@ $qr  = mysqli_query($connect, $kueri);
                                 <!-- Testimonial tittle -->
                                 <div class="font-back-tittle mb-105">
                                     <div class="archivment-front">
-                                        <img src="assets/img/logo/VIPRoomA.jpg" alt="">
+                                        <!-- <img src="assets/img/rooms/Wisan.jpg" alt=""> -->
                                     </div>
                                     
                                 </div>
                                  <!-- Testimonial Content -->
                                 <div class="testimonial-caption text-center">
-                                    <p>Wismakaliurang<br>Room Rate : 195000 | Fasilitas Ruangan : AC, TV, Kulkas, DVD.<br>
+                                    <p>Wisma<br>Room Rate : 195000 | Fasilitas Ruangan : AC, TV, Kulkas, DVD.<br>
                                     <div class="testimonial-ratting">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -129,13 +130,13 @@ $qr  = mysqli_query($connect, $kueri);
                                 <!-- Testimonial tittle -->
                                 <div class="font-back-tittle mb-105">
                                     <div class="archivment-front">
-                                        <img src="assets/img/logo/VIPRoomB.jpg" alt="">
+                                        <!-- <img src="assets/img/rooms/VIPRoomB.jpg" alt=""> -->
                                     </div>
                                    
                                 </div>
                                 <!-- Testimonial Content -->
                                 <div class="testimonial-caption text-center">
-                                    <p>Homestay<br>Room Rate : 205000 | Fasilitas Ruangan : Sofa, Spring Bed, TV, Kulkas, DVD Player.<br>
+                                    <p>Home<br>Room Rate : 205000 | Fasilitas Ruangan : Sofa, Spring Bed, TV, Kulkas, DVD Player.<br>
                                     <div class="testimonial-ratting">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -149,6 +150,31 @@ $qr  = mysqli_query($connect, $kueri);
                         </div>
                     </div>
                </div>
+               <div class="section-top-border">
+				<h3 class="mb-30">Policies</h3>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="single-defination">
+							<h4 class="mb-20">Homestay C4</h4>
+							<p>• Check-in time: After 15:00 on the day of arrival.<br>• Check-out time: 11:00 upon day of departure.
+</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="single-defination">
+							<h4 class="mb-20">Wisma Kaliurang</h4>
+							<p>• Check-in time: After 15:00 on the day of arrival.<br> • Check-out time: 11:00 upon day of departure.
+</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="single-defination">
+							<h4 class="mb-20">Homestay</h4>
+							<p>• Smoking: Smoking is allowed.<br> • Pets: No pets allowed</p>
+						</div>
+					</div>
+				</div>
+			</div>
             </div>
         </div>
         </div>

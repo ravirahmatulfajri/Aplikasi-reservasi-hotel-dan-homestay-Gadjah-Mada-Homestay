@@ -30,7 +30,7 @@ $qr  = mysqli_query($connect, $kueri);
         <div class="slider-area ">
             <!-- Mobile Menu -->
             <div class="slider-active dot-style">
-                <div class="single-slider  hero-overly slider-height d-flex align-items-center" data-background="assets/img/hero/h1_hero.jpg" >
+                <div class="single-slider  hero-overly slider-height d-flex align-items-center" data-background="assets/img/slide/slide1.jpg" >
                     <div class="container">
                         <div class="row justify-content-center text-center">
                             <div class="col-xl-9">
@@ -42,7 +42,7 @@ $qr  = mysqli_query($connect, $kueri);
                         </div>
                     </div>
                 </div>
-                <div class="single-slider  hero-overly slider-height d-flex align-items-center" data-background="assets/img/hero/h2_hero.jpg" >
+                <div class="single-slider  hero-overly slider-height d-flex align-items-center" data-background="assets/img/slide/slide2.jpg" >
                     <div class="container">
                         <div class="row justify-content-center text-center">
                             <div class="col-xl-9">
@@ -54,7 +54,7 @@ $qr  = mysqli_query($connect, $kueri);
                         </div>
                     </div>
                 </div>
-                <div class="single-slider  hero-overly slider-height d-flex align-items-center" data-background="assets/img/hero/h3_hero.jpg" >
+                <div class="single-slider  hero-overly slider-height d-flex align-items-center" data-background="assets/img/slide/slide3.jpg" >
                     <div class="container">
                         <div class="row justify-content-center text-center">
                             <div class="col-xl-9">
@@ -86,8 +86,8 @@ $qr  = mysqli_query($connect, $kueri);
                 <div class="row">
                    <div class="col-xl-5 col-lg-6">
                         <div class="customer-img mb-120">
-                            <img src="assets/img/customer/customar1.png" class="customar-img1" alt="">
-                            <img src="assets/img/customer/customar2.png" class="customar-img2" alt="">
+                            <img src="assets/img/home/image.png" class="customar-img1" alt="">
+                            <img src="assets/img/home/background.png" class="customar-img2" alt="">
                             <div class="service-experience heartbeat">
                                 <h3>Homestay<br>C4</h3>
                             </div>

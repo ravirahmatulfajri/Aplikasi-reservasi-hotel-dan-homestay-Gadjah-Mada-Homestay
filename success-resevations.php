@@ -52,9 +52,9 @@ $tipe_kamar=$data['tipe_kamar'];
                                 <td>City :<td><b>  <?php echo"$alamat" ?></b></td><br>
                                 <td>Tanggal Check In :<td><b>  <?php echo"$tgl_cekin" ?></b></td><br>
                                 <td>Tanggal Check Out :<td><b>  <?php echo"$tgl_cekout" ?></b></td><br>
-                                <td>Tipe  Kamar :<td><b>  <?php echo"$tipe_kamar" ?></b></td><br>
-                                <td>Nomor Kamar :<td><b> <?php
-									   $no=0;
+                                <td>Tipe  :<td><b>  <?php echo"$tipe_kamar" ?></b></td><br>
+                                <td>Booking :<td><b> <?php
+									  
 									  $kueri1 = "select a.no_pesan, a.id_kamar, b.nm_kamar from tb_pesan_kamar a, tb_kamar b 
 									  				where a.id_kamar = b.id_kamar and a.no_pesan = '$no_pesan' order by id_kamar";
 									  $qr1  = mysqli_query($connect,$kueri1);
@@ -63,15 +63,17 @@ $tipe_kamar=$data['tipe_kamar'];
 									  $no_pesan = $data1['no_pesan'];
 									  $id_kamar=$data1['id_kamar'];	
 									  $nm_kamar=$data1['nm_kamar'];	
-									  $no++;
+									 
 									  
-									  echo"$no. <b>$nm_kamar<br /></b>";
+									  echo" <b>$nm_kamar<br /></b>";
 									  }
 									  ?>	</td><br>
                               
                                 <p>Segera lakukan pembayaran<br> Sebelum batas waktu yang ditentukan <br>Ya.</p>
                                 <a href="accommodation.php" class="btn border-btn">Pesan Lagi  <i class="ti-angle-left"></i></a>
                                 <a href="cetakpdf.php" class="btn border-btn" target='_blank'>Cetak Bukti Pesanan  <i class="ti-angle-left"></i></a>
+                                <!-- <a href="cetakpdf.php?no_pesan=..." class="btn border-btn" target='_blank'>Cetak Bukti Pesanan  <i class="ti-angle-left"></i></a> -->
+                                <!-- <a href="cetakpdf.php?<?= $data1['no_pesan']?>" class="btn border-btn" target='_blank'>Cetak Bukti Pesanan  <i class="ti-angle-left"></i></a> -->
                                 <!-- index.php?menu=success-resevations&no_pesan=$_POST[no_pesan] -->
                                
                                 

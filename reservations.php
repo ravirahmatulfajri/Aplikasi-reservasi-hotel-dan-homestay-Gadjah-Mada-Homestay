@@ -39,7 +39,7 @@ $outyear = date("Y", $checkout);
     <div class="row ">
       <div class="col-12">
 
-        <h4 class="pb-10"><strong>Cek Status Kamar </strong></h4>
+        <h4 class="pb-10"><strong>Cek Status Homestay </strong></h4>
 
         <form onSubmit="return checkrequired(this)" id="form1" name="form1" method="post" action="functions.php">
           <div class="booking-wrap d-flex flex-md-column justify-content-between align-items-center align-items-md-start">
@@ -161,7 +161,7 @@ $outyear = date("Y", $checkout);
                 </div>
               </div>
               <div class="col-md-6">
-                <input name="checking_room" type="submit" class="btn select-btn" id="kirim" value="Cek Kamar">
+                <input name="checking_room" type="submit" class="btn select-btn" id="kirim" value="Cek Homestay">
               </div>
             </div>
           </div>
