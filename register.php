@@ -15,8 +15,8 @@ while ($data = mysqli_fetch_array($qr)) {
 $tglp = mktime(date("H"), date("i"), date("s"), date("m"), date("d"), date("Y"));
 $no_pesan = date("00jnYHis", $tglp);
 
-$tgl_ci = date("j/n/Y", $_GET['in']);
-$tgl_co = date("j/n/Y", $_GET['out']);
+$tgl_ci = date("d/m/Y", $_GET['in']);
+$tgl_co = date("d/m/Y", $_GET['out']);
 $tgl_cci = $_GET['in'];
 $tgl_cco = $_GET['out'];
 ?>

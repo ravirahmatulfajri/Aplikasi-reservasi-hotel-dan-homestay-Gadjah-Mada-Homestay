@@ -9,19 +9,6 @@ while ($data = mysqli_fetch_array($qr)) {
   $tipe_kamar = $data['tipe_kamar'];
 }
 
-$tglp = mktime(date("H"), date("i"), date("s"), date("m"), date("d"), date("Y"));
-$no_pesan = date("00jnYHis", $tglp);
-
-$bulan = array(1 => 'Januari', 2 => 'Febuari', 3 => 'Maret', 4 => 'April', 5 => 'Mei', 6 => 'Juni', 7 => 'Juli', 8 => 'Agustus', 9 => 'September', 10 => 'Oktober', 11 => 'November', 12 => 'Desember');
-$checkin = mktime(0, 0, 0, date("m"), date("d"), date("Y"));
-$indate = date("j", $checkin);
-$inmonth = date("n", $checkin);
-$inyear = date("Y", $checkin);
-$checkout = mktime(0, 0, 0, date("m"), date("d") + 3, date("Y"));
-$outdate = date("j", $checkout);
-$outmonth = date("n", $checkout);
-$outyear = date("Y", $checkout);
-
 ?>
 
 <div class="text-center pt-40">
@@ -33,6 +20,61 @@ $outyear = date("Y", $checkout);
   </span>
 </div>
 
+<!-- Booking Room Start-->
+<div class="booking-area" style="margin-top: 40px !important;">
+  <div class="container">
+    <div class="row ">
+      <div class="col-12">
+        <h4 class="pb-10"><strong>Cek Status Kamar </strong></h4>
+        <form onSubmit="return checkrequired(this)" id="form1" name="form1" method="post" action="functions.php">
+          <div class="booking-wrap d-flex justify-content-between align-items-center">
+
+            <!-- select in date -->
+            <div class="single-select-box mb-30">
+              <!-- select out date -->
+              <div class="boking-tittle">
+                <span> Check In Date:</span>
+              </div>
+              <div class="boking-datepicker">
+
+                <input id="datepicker1" name="tgl_cekin" autocomplete="off" placeholder="<?= date('d/m/Y', strtotime($Date . ' + 1 days')); ?>" data-date-format="d/m/Y" />
+              </div>
+            </div>
+
+
+
+
+            <!-- Single Select Box -->
+            <div class="single-select-box mb-30">
+              <!-- select out date -->
+              <div class="boking-tittle">
+                <span>Check OutDate:</span>
+              </div>
+              <div class="boking-datepicker">
+                <input id="datepicker2" name="tgl_cekout" autocomplete="off" placeholder="<?= date('d/m/Y', strtotime($Date . ' + 2 days')); ?>" data-date-format="d/m/Y" />
+              </div>
+            </div>
+
+            <!-- Single Select Box -->
+            <div class="single-select-box mb-30">
+              <div class="boking-tittle">
+                <span>Rooms:</span>
+              </div>
+              <div class="select-this">
+                <?= $tipe_kamar ?> <input name="id_tipe" type="hidden" value="<?php echo "$id_tipe" ?>">
+              </div>
+            </div>
+            <!-- Single Select Box -->
+            <div class="single-select-box pt-45 mb-30">
+              <input name="checking_room" type="submit" class="btn select-btn" id="kirim" value="Cek Kamar">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Booking Room End-->
 
 <div class="booking-area" style="margin-top: 40px !important;">
   <div class="container">
@@ -43,7 +85,6 @@ $outyear = date("Y", $checkout);
 
         <form onSubmit="return checkrequired(this)" id="form1" name="form1" method="post" action="functions.php">
           <div class="booking-wrap d-flex flex-md-column justify-content-between align-items-center align-items-md-start">
-
 
             <div class="d-flex flex-column flex-md-row row container-fluid pt-45 mb-30">
 
