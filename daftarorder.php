@@ -1,4 +1,4 @@
-<!-- <link href="images/styles.css" rel="stylesheet" type="text/css"> -->
+
 <link rel="stylesheet" href="assets/css/style.css">
 
 <?php
@@ -32,7 +32,7 @@ foreach ($rows as $value) {
     }
   }
 }
-// echo '<pre>' . var_export($menus, true) . '</pre>';
+
 
 
 

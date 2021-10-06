@@ -100,7 +100,7 @@ $htmlMail = '
 ';
 
 // kirim email mailSuccess(penerima, subject, body)
-// mailSuccess($email, 'Selamat....Pesanan Hotel Berhasil', $htmlMail);
+mailSuccess($email, 'Selamat....Pesanan Hotel Berhasil', $htmlMail);
 
 ?>
 <!-- CSS here -->
@@ -130,8 +130,10 @@ $htmlMail = '
 
                         <p class="mt-10">Segera lakukan pembayaran<br> Sebelum batas waktu yang ditentukan Ya.</p>
                         <a href="accommodation.php" class="btn border-btn">Pesan Lagi <i class="ti-angle-left"></i></a>
-                        <a href="cetakpdf.php" class="btn border-btn"  target='_blank'>Cetak Bukti Pesanan <i class="ti-angle-left"></i></a>
-                        <!-- index.php?menu=success-resevations&no_pesan=$_POST[no_pesan] -->
+                        <a href="cetakpdf.php" class="btn border-btn"  target='_blank'>Cetak Bukti Pesanan <i class="ti-angle-left"></i></a><br><br>
+                        <form method="post" action="">
+                        <input name="kirim" type="submit"  class="btn more-btn" id="kirim" value="Kirim via WhatsApp">
+                        </form>
                     </div>
                 </div>
             </div>
@@ -140,3 +142,14 @@ $htmlMail = '
 
 </div>
 <!-- Dining End -->
+
+<?php
+if(isset($_POST['kirim'])){
+
+echo "<script>window.location = 'https://api.whatsapp.com/send?phone=$phone&text=*.........................................Detail Pesanan Anda.......................................* *Tanggal Pesan :* $tgl_pesan *Nomor Pesan :* $no_pesan *Nama :* $nama *Email :* $email *Phone :* $phone *Kota :* $kota *Alamat :* $alamat *Tanggal Cekin :* $tgl_cekin  *Tanggal Cekout :* $tgl_cekout *Tipe Kamar :* $tipe_kamar *Booking :* $nm_kamar&source=&data='</script> ";
+
+}
+?>
+<!-- <form method="post" action="">
+<input name="kirim" type="submit"  class="btn more-btn1" id="kirim" value="Kirim">
+</form> -->

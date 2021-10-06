@@ -4,45 +4,32 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit451383ba6f81e4b460d2ded5aa0159e1
+class ComposerStaticInit97db1b3dec4b848c77657f91d031525c
 {
     public static $prefixLengthsPsr4 = array (
-        'S' => 
+        'P' => 
         array (
-            'Spipu\\Html2Pdf\\' => 15,
+            'PHPMailer\\PHPMailer\\' => 20,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Spipu\\Html2Pdf\\' => 
+        'PHPMailer\\PHPMailer\\' => 
         array (
-            0 => __DIR__ . '/..' . '/spipu/html2pdf/src',
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
     );
 
     public static $classMap = array (
-        'Datamatrix' => __DIR__ . '/..' . '/tecnickcom/tcpdf/include/barcodes/datamatrix.php',
-        'PDF417' => __DIR__ . '/..' . '/tecnickcom/tcpdf/include/barcodes/pdf417.php',
-        'QRcode' => __DIR__ . '/..' . '/tecnickcom/tcpdf/include/barcodes/qrcode.php',
-        'TCPDF' => __DIR__ . '/..' . '/tecnickcom/tcpdf/tcpdf.php',
-        'TCPDF2DBarcode' => __DIR__ . '/..' . '/tecnickcom/tcpdf/tcpdf_barcodes_2d.php',
-        'TCPDFBarcode' => __DIR__ . '/..' . '/tecnickcom/tcpdf/tcpdf_barcodes_1d.php',
-        'TCPDF_COLORS' => __DIR__ . '/..' . '/tecnickcom/tcpdf/include/tcpdf_colors.php',
-        'TCPDF_FILTERS' => __DIR__ . '/..' . '/tecnickcom/tcpdf/include/tcpdf_filters.php',
-        'TCPDF_FONTS' => __DIR__ . '/..' . '/tecnickcom/tcpdf/include/tcpdf_fonts.php',
-        'TCPDF_FONT_DATA' => __DIR__ . '/..' . '/tecnickcom/tcpdf/include/tcpdf_font_data.php',
-        'TCPDF_IMAGES' => __DIR__ . '/..' . '/tecnickcom/tcpdf/include/tcpdf_images.php',
-        'TCPDF_IMPORT' => __DIR__ . '/..' . '/tecnickcom/tcpdf/tcpdf_import.php',
-        'TCPDF_PARSER' => __DIR__ . '/..' . '/tecnickcom/tcpdf/tcpdf_parser.php',
-        'TCPDF_STATIC' => __DIR__ . '/..' . '/tecnickcom/tcpdf/include/tcpdf_static.php',
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit451383ba6f81e4b460d2ded5aa0159e1::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit451383ba6f81e4b460d2ded5aa0159e1::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit451383ba6f81e4b460d2ded5aa0159e1::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit97db1b3dec4b848c77657f91d031525c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit97db1b3dec4b848c77657f91d031525c::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit97db1b3dec4b848c77657f91d031525c::$classMap;
 
         }, null, ClassLoader::class);
     }

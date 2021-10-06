@@ -1,4 +1,4 @@
-<!-- <link href="images/styles.css" rel="stylesheet" type="text/css"> -->
+
 <?php
 include "incl/connect.inc.php";
 

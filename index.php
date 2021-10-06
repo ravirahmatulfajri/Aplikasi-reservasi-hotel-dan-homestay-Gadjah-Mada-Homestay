@@ -14,7 +14,7 @@ $qr  = mysqli_query($connect, $kueri);
 <body>
        
    <!-- Preloader Start -->
-    <!-- <div id="preloader-active">
+     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
@@ -23,7 +23,7 @@ $qr  = mysqli_query($connect, $kueri);
                 </div>
             </div>
         </div>
-    </div>  -->
+    </div>  
     <!-- Preloader Start
 
  slider Area Start-->
@@ -96,9 +96,9 @@ $qr  = mysqli_query($connect, $kueri);
                     <div class=" col-xl-4 col-lg-4">
                         <div class="customer-caption">
                             <span>Gadjah Mada Accommodation</span>
-                            <!-- <h2>Make the customer the hero of your story</h2> -->
+                           
                             <div class="caption-details">
-                                <!-- <p class="pera-dtails">Lorem ipsum dolor sit amet, consectetur adipisic- ing elit, sed do eiusmod tempor inc. </p> -->
+                               
                                 <?php
                                   while ($data = mysqli_fetch_array($qr)) :
                                       $isi_menu = $data['isi_menu'];

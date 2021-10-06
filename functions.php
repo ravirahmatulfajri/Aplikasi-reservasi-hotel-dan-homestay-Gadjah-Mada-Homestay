@@ -28,25 +28,34 @@ if (isset($_POST['guest_reset']))
 }
 
 
-
 //Reservations
-if (isset($_POST['checking_room']))
-{		
-	$tglci = mktime(date("0"),date("0"),date("0"),date("$_POST[required_bln_cekin]"),date("$_POST[required_tgl_cekin]"),date("$_POST[required_thn_cekin]")); 
-	$tglco = mktime(date("0"),date("0"),date("0"),date("$_POST[required_bln_cekout]"),date("$_POST[required_tgl_cekout]"),date("$_POST[required_thn_cekout]")); 
-	$id = $_POST['id_tipe']; 
+if (isset($_POST['checking_room'])) {
 
-	header("location: index.php?menu=register&in=$tglci&out=$tglco&id=$id");
-	
-	exit;
+	$id = $_POST['id_tipe'];
+	$tgl_checkout = $_POST['tgl_cekout'];
+	$tgl_cekin = $_POST['tgl_cekin'];
+
+
+	if ((isset($tgl_checkout) && $tgl_checkout !== '') && (isset($tgl_cekin) && $tgl_cekin !== '')) {
+		$tglci = strtotime(date($tgl_cekin));
+		$tglco = strtotime(date($tgl_checkout));
+
+		header("location: index.php?menu=register&in=$tglci&out=$tglco&id=$id");
+
+		exit;
+	} else {
+
+		header("location: index.php?menu=reservations&id=$id");
+
+		exit;
+	}
 }
 
 if (isset($_POST['reservation_new']))
 {		
 	//Batas Maksimal
 	$tgl_pesan = mktime(date("H"),date("i"),date("s"),date("m"),date("d"),date("Y")); 
-	//$tgl_checkin = mktime(date("0"),date("0"),date("0"),date("$required_bln_cekin"),date("$required_tgl_cekin"),date("$required_thn_cekin")); 
-	//$tgl_checkout = mktime(date("H"),date("i"),date("s"),date("$required_bln_cekout"),date("$required_tgl_cekout"),date("$required_thn_cekout"));
+	
 		
 	$total=0;
 	$sql_data=mysqli_query($connect,"select * from tb_pesan where nama = '$_POST[required_nama]' and email = '$_POST[required_email]'");	
@@ -101,23 +110,6 @@ if (isset($_POST['reservation_new']))
 	}
 }
 
-// if(isset($_POST['send'])){
-// 	$tgl_pesan = $tgl_pesan;
-// 	$no_pesan = $_POST['no_pesan'];
-// 	$email = $_POST['required_email'];
-// 	$phone = $_POST['required_phone'];
-// 	$nama = $_POST['required_nama]'];
-// 	$kota = $_POST['required_city'];
-// 	$alamat = $_POST['required_alamat'];
-// 	$tgl_cekin = $_POST['tgl_cci'];
-// 	$tgl_cekout = $_POST['tgl_cco'];
-// 	$id_tipe = $_POST['id_tipe'];
-// 	header("location:https:/api.whatsapp.com/send?No. Pesan=$no_pesan&text=Nama:%20$nama%20%0DEmail:%20$email%20%0DAlamat:%20$alamat");
-// }else{
-// 	echo"
-// 	<script>window.location=history.go(-1);</script>
-// 	";
-// }
 			
 
 ?>

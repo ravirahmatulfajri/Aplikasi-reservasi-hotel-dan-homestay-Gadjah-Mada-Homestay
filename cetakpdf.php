@@ -2,29 +2,6 @@
 include "incl/connect.inc.php" ;
 
 
-// $id_pendaftar = $_GET['no_pesan'];
-
-// echo $id_pendaftar;
-// die;
-// $sql_pendaftar = "SELECT * FROM tb_pesan id = '$id_pendaftar'";
-// $result_pendaftar = mysqli_query($connect, $sql_pendaftar);
-// $data_pendaftar = mysqli_fetch_array($result_pendaftar);
-
-// //cek hasil
-// if(!$result_pendaftar){
-//   die('Query Error : '. mysqli_error($connect));
-// }
-
-// $sql_nilai = "SELECT * FROM tb_pesan id = '$id_pendaftar'";
-// $result_nilai = mysqli_query($connect, $sql_nilai);
-// $data_nilai = mysqli_fetch_array($result_nilai);
-
-// //cek hasil
-// if(!$result_nilai){
-//   die('Query Error : '. mysqli_error($connect));
-// }
-
-
 $query = mysqli_query($connect, "Select * FROM tb_pesan");
 while($data = mysqli_fetch_array($query)){
 $id_pesan = $data['id_pesan'];
@@ -55,9 +32,10 @@ $nm_kamar=$data1['nm_kamar'];
 
 ?>
 <?php
-require __DIR__.'/vendor/autoload.php';
+require __DIR__.'/html2pdf/vendor/autoload.php';
 
-use Spipu\Html2Pdf\Html2Pdf;
+use Spipu\Html2Pdf\Html2pdf;
+
 $html2pdf = new Html2Pdf('P','A4','fr', true, 'UTF-8', array(15, 15, 15, 15), false); 
 $cetak = "
 </html>

@@ -39,9 +39,7 @@ while($data = mysqli_fetch_array($qry)) {
                     $pict=$data['pict'];
                     
 ?>
-                
-<!--================ Accomodation Area  =================-->
- <!--================Blog Area =================-->
+  
  <!-- <section class="blog_area section-padding"> -->
  &nbsp;
         <div class="container">
@@ -55,22 +53,13 @@ while($data = mysqli_fetch_array($qry)) {
                                 <a href='index.php?menu=reservations&id=<?= $id_tipe ?>'>
                                     <img src='<?= $pict ?>' height='auto' style="object-fit: contain;" class="w-100 px-md-3 px-md-5" />
                                 </a>
-                                    <!-- <img src="$pict" width='710' height='350' /> -->
+                                  
                                 </span>
                                     </td>
                                    
-                                 <!-- <a href="#" class="blog_item_date"> -->
-                                    <!-- <h3>CLICK</h3>
-                                    <p>PICTURE</p> -->
-                                </a> 
+                                 
                             </div>
 
-                            <!-- <div class="blog_details">
-                                <a class="d-inline-block" href="singlenews.php">
-                                    <h2>kkk
-                                    </h2>
-                                </a>
-                            </div> -->
                             
                         </article>
          
@@ -119,7 +108,7 @@ while($data = mysqli_fetch_array($qry)) {
                         </aside>
                         <br><br>
                         
-        <!-- <a href="index.php?menu=reservations&id=$id_tipe" class="btn more-btn1">Book Now <i class="ti-angle-right"></i> </a> -->
+      
        <a class="btn more-btn1"
         <?php echo"<a href='index.php?menu=reservations&id=$id_tipe'>Book Now</a>"; ?></div>
        </a>
@@ -130,7 +119,7 @@ while($data = mysqli_fetch_array($qry)) {
             </div>
         </div>
     </section>
-    <!--================Blog Area =================-->
+    <!--================End Area =================-->
                
                     <?php 
 } ?>

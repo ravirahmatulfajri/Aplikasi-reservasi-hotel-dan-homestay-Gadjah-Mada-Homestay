@@ -55,7 +55,7 @@ $tgl_cco = $_GET['out'];
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <input class="form-control" name="required_phone" id="phone" type="number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Phone'" placeholder="Enter Phone">
+                                        <input class="form-control" name="required_phone" id="phone" type="number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Phone 628'" placeholder="Enter Phone 628">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
@@ -163,28 +163,5 @@ $tgl_cco = $_GET['out'];
             </div>
             </form>
         </section>
-
-<!-- <span class="float"
-onclick="gotowhatsapp()"
-style="
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  bottom: 95px;
-  right: 121px;
-  color: #fff;
-  border-radius: 50px;
-  text-align: center;
-  cursor: pointer;
-  box-shadow: 2px 2px 3px #999;
-"
->
-<img
-  src="https://trickuweb.com/whatsapp.png"
-  alt=""
-  height="60px"
-  width="60px"
-/>
-</span> -->
 
        

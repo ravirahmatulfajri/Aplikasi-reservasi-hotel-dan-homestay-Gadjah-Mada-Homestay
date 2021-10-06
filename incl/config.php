@@ -6,10 +6,16 @@ $preloader_start = "Homestay";
 
 
 // config email smtp
+// $host = "smtp.gmail.com";    //kosong kan
+// $username = "example@gmail.com";     //diisi email
+// $password = "password";     //password email
+// $email_from = "example@gmail.com";  
+// $email_from_name = "example";
+
 $host = "smtp.gmail.com";
-$username = "example@gmail.com";
-$password = "password";
-$email_from = "example@gmail.com";
-$email_from_name = "example";
+$username = "ravirahmatul01@gmail.com";
+$password = ".........";
+$email_from = "ravirahmatul01@gmail.com";
+$email_from_name = "Ravi";
 
 ?>
