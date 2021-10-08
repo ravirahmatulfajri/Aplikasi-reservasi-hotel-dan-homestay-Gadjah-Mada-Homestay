@@ -24,7 +24,7 @@ if (isset($_GET['no_pesan'])) {
 
 
   // query mendapatkan nomor kamar yang di pilih
-  $no = 0;
+ 
   $kueri1 = "select a.no_pesan, a.id_kamar, b.nm_kamar from tb_pesan_kamar a, tb_kamar b 
                     where a.id_kamar = b.id_kamar and a.no_pesan = '$no_pesan' order by id_kamar";
   $qr1  = mysqli_query($connect, $kueri1);
@@ -35,10 +35,10 @@ if (isset($_GET['no_pesan'])) {
     $no_pesan = $data1['no_pesan'];
     $id_kamar = $data1['id_kamar'];
     $nm_kamar = $data1['nm_kamar'];
-    $no++;
+   
 
     // kamar di push yang nantinya akan di implute
-    array_push($kamar, $no . ' ' . $nm_kamar);
+    // array_push($kamar,  ' ' . $nm_kamar);
   }
 }
 
@@ -47,70 +47,28 @@ if (isset($_GET['no_pesan'])) {
 require __DIR__ . '/html2pdf/vendor/autoload.php';
 
 use Spipu\Html2Pdf\Html2Pdf;
-
-$html2pdf = new Html2Pdf('P', 'A4', 'fr', true, 'UTF-8', array(15, 15, 15, 15), false);
-$cetak = '
+$html2pdf = new Html2Pdf('P','A4','fr', true, 'UTF-8', array(15, 15, 15, 15), false); 
+$cetak = "
 </html>
 <head>
   <title></title>
 </head>
-  <body>
-  <h1 style="color: black; font-size: 32px; font-weight: bold; line-height: 36px; margin: 0 0 30px 0">
-  Pesanan Hotel Berhasil
-  </h1>
-
-  <h3>Detail Pesanan</h3>
-
-  <table style="width: 60%;">
-    <tr>
-        <td>Tanggal Pesan</td>
-        <td> ' . $tgl_pesan . '</td>
-    </tr>
-    <tr>
-        <td>Nomor Pesan</td>
-        <td> ' . $no_pesan . '</td>
-    </tr>
-    <tr>
-        <td>Nama</td>
-        <td> ' . $nama . '</td>
-    </tr>
-    <tr>
-        <td>Email</td>
-        <td> ' . $email . '</td>
-    </tr>
-    <tr>
-        <td>Phone</td>
-        <td> ' . $phone . '</td>
-    </tr>
-    <tr>
-        <td>Kota</td>
-        <td> ' . $kota . '</td>
-    </tr>
-    <tr>
-        <td>City</td>
-        <td> ' . $alamat . '</td>
-    </tr>
-    <tr>
-        <td>Tanggal Check In</td>
-        <td> ' . $tgl_cekin . '</td>
-    </tr>
-    <tr>
-        <td>Tanggal Check Out</td>
-        <td> ' . $tgl_cekout . '</td>
-    </tr>
-    <tr>
-        <td>Tipe Kamar</td>
-        <td> ' . $tipe_kamar . '</td>
-    </tr>
-    <tr>
-        <td>Nomor Kamar</td>
-        <td>' . implode(" | ", $kamar) . '</td>
-    </tr>
-  </table>
-
-  </body>
+<body>
+   <h1>Order Homestay Berhasil </h1> 
+   <h4>Detail Pemesanan Anda :</h4> <br>
+          Tanggal Pesan : <b>$tgl_pesan<br /></b><br>
+          Nomor Pesan : <b>$no_pesan<br /></b><br>
+          Nama : <b>$nama<br /></b><br>
+          Email : <b>$email<br /></b><br>
+          Phone : <b>$phone<br /></b><br>
+          Kota : <b>$kota<br /></b><br>
+          Tanggal Check In : <b>$tgl_cekin<br /></b><br>
+          Tanggal Check Out : <b>$tgl_cekout<br /></b><br>
+          Tipe : <b>$nm_kamar<br /></b>
+          
+</body>
 </html>
-';
+";
 
 
 
@@ -118,4 +76,4 @@ $cetak = '
 $html2pdf->writeHTML($cetak);
 $html2pdf->output();  //manual download
 // $html2pdf->output("Bukti pesanan-Homestay.pdf","D"); //auto download
-// $html2pdf->output(__DIR__."/contoh_laporan.pdf","F"); //download di direktori folder
+// $html2pdf->output(__DIR__."/Bukti pesanan Homestay.pdf","F"); //download di direktori folder

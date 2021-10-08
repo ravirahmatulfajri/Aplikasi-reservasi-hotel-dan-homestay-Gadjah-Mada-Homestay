@@ -117,7 +117,7 @@ $htmlMail = '
 
                         <p class="mt-10">Segera lakukan pembayaran<br> Sebelum batas waktu yang ditentukan Ya.</p>
                         <a href="accommodation.php" class="btn border-btn">Pesan Lagi <i class="ti-angle-left"></i></a>
-                        <a href="cetakpdf.php?no_pesan=<?= $_GET['no_pesan'] ?>" class="btn border-btn">Cetak Bukti Pesanan <i class="ti-angle-left"></i></a>
+                        <a href="cetakpdf.php?no_pesan=<?= $_GET['no_pesan'] ?>" class="btn border-btn" target='_blank'>Cetak Bukti Pesanan <i class="ti-angle-left"></i></a>
                         <form method="post" action="">
                             <input name="kirim" type="submit" class="btn more-btn" id="kirim" value="Kirim via WhatsApp">
                         </form>
