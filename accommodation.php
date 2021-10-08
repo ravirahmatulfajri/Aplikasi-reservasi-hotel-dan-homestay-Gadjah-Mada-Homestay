@@ -1,6 +1,7 @@
 <?php 
 include "incl/connect.inc.php" ;
 include "templates/header.php";
+
 			
 $kueri = "select distinct(a.tipe_kamar), a.id_tipe, a.harga, b.fasilitas, a.pict 
 								from tb_kamar_tipe a, tb_kamar b 

@@ -1,7 +1,7 @@
 <?php
 
 include "incl/connect.inc.php";
-include "templates/header.php";
+include './incl/config.php';
 
 $kueri = "select * from tb_manag_site where menu = 'Home'";
 $qr  = mysqli_query($connect, $kueri);
@@ -12,21 +12,10 @@ $qr  = mysqli_query($connect, $kueri);
 </head>
 
 <body>
-       
-   <!-- Preloader Start -->
-     <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="preloader-circle"></div>
-                <div class="preloader-img pere-text">
-                    <strong><?$preloader_start?></b>
-                </div>
-            </div>
-        </div>
-    </div>  
-    <!-- Preloader Start
-
- slider Area Start-->
+<?php       
+include "templates/header.php";
+?>
+ <!-- slider Area Start -->
         <div class="slider-area ">
             <!-- Mobile Menu -->
             <div class="slider-active dot-style">
