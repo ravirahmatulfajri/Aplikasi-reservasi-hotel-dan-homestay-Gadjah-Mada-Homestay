@@ -1,29 +1,26 @@
 <?php
 
-include "incl/connect.inc.php" ;
-include "incl/function.php" ;
+include "incl/connect.inc.php";
+// include "incl/function.php" ;
 
 //print_r($_GET);
 //Guest Relations
-if (isset($_POST['guest_new']))
-{
+if (isset($_POST['guest_new'])) {
 	$konfir_nama = $_POST['required_nama'];
 	$konfir_email = $_POST['required_email'];
-		
-	$perintah="insert into tb_contact_us (nama, alamat, phone, email, pesan, tgl_pesan)
+
+	$perintah = "insert into tb_contact_us (nama, alamat, phone, email, pesan, tgl_pesan)
 				values ('$_POST[required_nama]','$_POST[required_alamat]','$_POST[required_phone]','$_POST[required_email]','$_POST[required_pesan]','$_POST[tanggal]')";
 
-	$berhasil=mysqli_query($connect,$perintah) 
-			or die ("<SCRIPT> alert('Data tidak masuk database / data telah ada !!'); history.back(); </SCRIPT>");
-		if ($berhasil)
-		{
-			header ("location: location.php");
-		}
+	$berhasil = mysqli_query($connect, $perintah)
+		or die("<SCRIPT> alert('Data tidak masuk database / data telah ada !!'); history.back(); </SCRIPT>");
+	if ($berhasil) {
+		header("location: location.php");
+	}
 	exit;
 }
-if (isset($_POST['guest_reset']))
-{
-	header ("location: index.php?menu=guestrelations");
+if (isset($_POST['guest_reset'])) {
+	header("location: index.php?menu=guestrelations");
 	exit;
 }
 
@@ -51,66 +48,55 @@ if (isset($_POST['checking_room'])) {
 	}
 }
 
-if (isset($_POST['reservation_new']))
-{		
+if (isset($_POST['reservation_new'])) {
 	//Batas Maksimal
-	$tgl_pesan = mktime(date("H"),date("i"),date("s"),date("m"),date("d"),date("Y")); 
-	
-		
-	$total=0;
-	$sql_data=mysqli_query($connect,"select * from tb_pesan where nama = '$_POST[required_nama]' and email = '$_POST[required_email]'");	
-	while ($data=mysqli_fetch_array($sql_data))
-	{ $total++; }	
-	if ($total > 3)
-	{
+	$tgl_pesan = mktime(date("H"), date("i"), date("s"), date("m"), date("d"), date("Y"));
+
+
+	$total = 0;
+	$sql_data = mysqli_query($connect, "select * from tb_pesan where nama = '$_POST[required_nama]' and email = '$_POST[required_email]'");
+	while ($data = mysqli_fetch_array($sql_data)) {
+		$total++;
+	}
+	if ($total > 0) {
 		include("index.php");
-		echo "<SCRIPT> alert('Maaf, batas maksimal booking online hanya 3 kali !! !'); history.back(); </SCRIPT>";
+		echo "<SCRIPT> alert('Maaf, Room saat ini sudah di pesan !! !'); history.back(); </SCRIPT>";
 		exit;
 	}
-	
+
 	$_POST["id_kamar"] = $_POST['required_id_kamar'];
 	$_POST["jumlah_data"] = count($_POST["id_kamar"]);
-	
-	for($i=0;$i<$_POST["jumlah_data"];$i++)
-	{
-	$data1 = $_POST["id_kamar"][$i];
-	$simpan = "insert into tb_pesan_kamar (no_pesan, id_kamar,tgl_checkin) values ('$_POST[no_pesan]','$data1','$_POST[tgl_cci]')";
-	
-	
-	$kueri = "select * from tb_kamar where id_kamar = $data1";
-	$proses = mysqli_query($connect,$kueri);
-	while ($data = mysqli_fetch_array($proses))
-	{
-		$status = $data['status'];
-		
-		if ($status == 'free')
-		{
-			$set_status = 'booking';
-		}		
+
+	for ($i = 0; $i < $_POST["jumlah_data"]; $i++) {
+		$data1 = $_POST["id_kamar"][$i];
+		$simpan = "insert into tb_pesan_kamar (no_pesan, id_kamar,tgl_checkin) values ('$_POST[no_pesan]','$data1','$_POST[tgl_cci]')";
+
+
+		$kueri = "select * from tb_kamar where id_kamar = $data1";
+		$proses = mysqli_query($connect, $kueri);
+		while ($data = mysqli_fetch_array($proses)) {
+			$status = $data['status'];
+
+			if ($status == 'free') {
+				$set_status = 'booking';
+			}
+		}
+
+		mysqli_query($connect, "update tb_kamar set status='$_POST[set_status]' where id_kamar=$data1");
+
+		$db_simpan = mysqli_query($connect, $simpan) or die("Gagal Simpan");
 	}
-	
-	mysqli_query($connect,"update tb_kamar set status='$_POST[set_status]' where id_kamar=$data1");
-	
-	$db_simpan = mysqli_query($connect,$simpan) or die ("Gagal Simpan");
-	}
-	if($db_simpan)
-	{	
-	
-		$perintah="insert into tb_pesan (tgl_pesan, no_pesan, email, phone, nama, kota, alamat, tgl_cekin, tgl_cekout, id_tipe)
+	if ($db_simpan) {
+
+		$perintah = "insert into tb_pesan (tgl_pesan, no_pesan, email, phone, nama, kota, alamat, tgl_cekin, tgl_cekout, id_tipe)
 				values ('$tgl_pesan','$_POST[no_pesan]','$_POST[required_email]','$_POST[required_phone]','$_POST[required_nama]','$_POST[required_city]',
 				'$_POST[required_alamat]','$_POST[tgl_cci]','$_POST[tgl_cco]','$_POST[id_tipe]')";
 
-		$berhasil=mysqli_query($connect,$perintah) 
-			or die ("<SCRIPT> alert('Data tidak masuk database / data telah ada !!'); history.back(); </SCRIPT>");
-			if ($berhasil)
-			{
-				header ("location: index.php?menu=success-resevations&no_pesan=$_POST[no_pesan]");
-			}
+		$berhasil = mysqli_query($connect, $perintah)
+			or die("<SCRIPT> alert('Data tidak masuk database / data telah ada !!'); history.back(); </SCRIPT>");
+		if ($berhasil) {
+			header("location: index.php?menu=success-resevations&no_pesan=$_POST[no_pesan]");
+		}
 		exit;
 	}
 }
-
-			
-
-?>
-

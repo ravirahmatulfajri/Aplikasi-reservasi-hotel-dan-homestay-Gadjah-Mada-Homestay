@@ -35,7 +35,7 @@ while ($data1 = mysqli_fetch_array($qr1)) {
     $no_pesan = $data1['no_pesan'];
     $id_kamar = $data1['id_kamar'];
     $nm_kamar = $data1['nm_kamar'];
-   
+
 
     // kamar di push yang nantinya akan di implute
     array_push($kamar, ' ' . $nm_kamar);
@@ -100,22 +100,9 @@ $htmlMail = '
 ';
 
 // kirim email mailSuccess(penerima, subject, body)
-mailSuccess($email, 'Selamat....Pesanan Hotel Berhasil', $htmlMail);
+// mailSuccess($email, 'Selamat....Pesanan Hotel Berhasil', $htmlMail);
 
 ?>
-<!-- CSS here -->
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-<link rel="stylesheet" href="assets/css/gijgo.css">
-<link rel="stylesheet" href="assets/css/slicknav.css">
-<link rel="stylesheet" href="assets/css/animate.min.css">
-<link rel="stylesheet" href="assets/css/magnific-popup.css">
-<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-<link rel="stylesheet" href="assets/css/themify-icons.css">
-<link rel="stylesheet" href="assets/css/slick.css">
-<link rel="stylesheet" href="assets/css/nice-select.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/responsive.css">
 
 <!-- Dining Start -->
 <div class="dining-area dining-padding-top">
@@ -130,9 +117,9 @@ mailSuccess($email, 'Selamat....Pesanan Hotel Berhasil', $htmlMail);
 
                         <p class="mt-10">Segera lakukan pembayaran<br> Sebelum batas waktu yang ditentukan Ya.</p>
                         <a href="accommodation.php" class="btn border-btn">Pesan Lagi <i class="ti-angle-left"></i></a>
-                        <a href="cetakpdf.php" class="btn border-btn"  target='_blank'>Cetak Bukti Pesanan <i class="ti-angle-left"></i></a><br><br>
+                        <a href="cetakpdf.php?no_pesan=<?= $_GET['no_pesan'] ?>" class="btn border-btn">Cetak Bukti Pesanan <i class="ti-angle-left"></i></a>
                         <form method="post" action="">
-                        <input name="kirim" type="submit"  class="btn more-btn" id="kirim" value="Kirim via WhatsApp">
+                            <input name="kirim" type="submit" class="btn more-btn" id="kirim" value="Kirim via WhatsApp">
                         </form>
                     </div>
                 </div>
@@ -144,10 +131,9 @@ mailSuccess($email, 'Selamat....Pesanan Hotel Berhasil', $htmlMail);
 <!-- Dining End -->
 
 <?php
-if(isset($_POST['kirim'])){
+if (isset($_POST['kirim'])) {
 
-echo "<script>window.location = 'https://api.whatsapp.com/send?phone=$phone&text=*.........................................Detail Pesanan Anda.......................................* *Tanggal Pesan :* $tgl_pesan *Nomor Pesan :* $no_pesan *Nama :* $nama *Email :* $email *Phone :* $phone *Kota :* $kota *Alamat :* $alamat *Tanggal Cekin :* $tgl_cekin  *Tanggal Cekout :* $tgl_cekout *Tipe Kamar :* $tipe_kamar *Booking :* $nm_kamar&source=&data='</script> ";
-
+    echo "<script>window.location = 'https://api.whatsapp.com/send?phone=$phone&text=%2ADetail%20Pesanan%20Anda%2A%0D%0A%0D%0A%2ATanggal%20Pesan%2A%20%3A$tgl_pesan%20%0D%0A%2ANomor%20Pesan%2A%20%3A%20$no_pesan%20%0D%0A%2ANama%2A%20%3A%20$nama%20%0D%0A%2AEmail%2A%20%3A%20$email%20%0D%0A%2APhone%2A%20%3A%20$phone%0D%0A%2AKota%2A%20%3A%20$kota%0D%0A%2AAlamat%2A%20%3A%20$alamat%0D%0A%2ATanggal%20Cekin%2A%20%3A%20$tgl_cekin%20%20%0D%0A%2ATanggal%20Cekout%2A%20%3A%20$tgl_cekout%20%0D%0A%2ATipe%20Kamar%2A%20%3A%20$tipe_kamar%20%20%0D%0A%2ABooking%2A%20%3A%20$nm_kamar&source=&data='</script> ";
 }
 ?>
 <!-- <form method="post" action="">
