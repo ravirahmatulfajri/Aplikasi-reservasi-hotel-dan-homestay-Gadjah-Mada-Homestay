@@ -49,27 +49,27 @@ $tanggal = tgl_indo(date('Y-m-d-D'));
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="form-group">
-                                <input class="form-control valid" name="required_nama" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
+                                <input class="form-control valid" name="required_nama" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name" required>
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
-                                <input class="form-control valid" name="required_email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
+                                <input class="form-control valid" name="required_email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-group">
-                                <input class="form-control" name="required_phone" id="phone" type="number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Phone 628'" placeholder="Enter Phone 628">
+                                <input class="form-control" name="required_phone" id="phone" type="number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Phone 628'" placeholder="Enter Phone 628" required>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <input class="form-control" name="required_city" id="city" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter City'" placeholder="Enter City">
+                                <input class="form-control" name="required_city" id="city" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter City'" placeholder="Enter City" required>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <input class="form-control" name="required_alamat" id="alamat" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Alamat'" placeholder="Enter Alamat">
+                                <input class="form-control" name="required_alamat" id="alamat" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Alamat'" placeholder="Enter Alamat" required>
                             </div>
                         </div>
                         <div class="col-12">

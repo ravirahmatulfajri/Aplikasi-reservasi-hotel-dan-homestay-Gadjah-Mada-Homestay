@@ -38,7 +38,7 @@ while ($data = mysqli_fetch_array($qr)) {
               </div>
               <div class="boking-datepicker">
 
-                <input id="datepicker1" data-provide="datepicker" data-date-format="m/d/Y" name="tgl_cekin" autocomplete="off"  placeholder="10/10/2020"/>
+                <input id="datepicker1" data-provide="datepicker" data-date-format="m/d/Y" name="tgl_cekin" autocomplete="off"  placeholder="dd/mm/yyyyy"/>
               </div>
             </div>
 
@@ -52,7 +52,7 @@ while ($data = mysqli_fetch_array($qr)) {
                 <span>Check OutDate:</span>
               </div>
               <div class="boking-datepicker">
-                <input id="datepicker2" data-provide="datepicker" data-date-format="m/d/Y" name="tgl_cekout" autocomplete="off" placeholder="10/12/2020" />
+                <input id="datepicker2" data-provide="datepicker" data-date-format="m/d/Y" name="tgl_cekout" autocomplete="off" placeholder="dd/mm/yyyyy" />
               </div>
             </div>
 

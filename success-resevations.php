@@ -1,6 +1,6 @@
 <?php
 include "incl/connect.inc.php";
-// include_once("incl/function.php");
+include_once("incl/function.php");
 
 // require mail untuk fungsi mailSuccess
 require __DIR__ . '/mail.php';
@@ -21,6 +21,8 @@ while ($data = mysqli_fetch_array($qry)) {
     $id_tipe = $data['id_tipe'];
     $tipe_kamar = $data['tipe_kamar'];
 }
+
+
 
 
 // query mendapatkan nomor kamar yang di pilih
@@ -52,7 +54,7 @@ $htmlMail = '
 <table style="width: 60%;">
     <tr>
         <td>Tanggal Pesan :</td>
-        <td> ' . $tgl_pesan . '</td>
+        <td> ' . $tgl_pesan . '</td> 
     </tr>
     <tr>
         <td>Nomor Pesan :</td>
@@ -100,7 +102,7 @@ $htmlMail = '
 ';
 
 // kirim email mailSuccess(penerima, subject, body)
-// mailSuccess($email, 'Selamat....Pesanan Hotel Berhasil', $htmlMail);
+mailSuccess($email, 'Selamat....Pesanan Hotel Berhasil', $htmlMail);
 
 ?>
 
@@ -115,9 +117,14 @@ $htmlMail = '
 
                         <?= $htmlMail ?>
 
+                        <?php
+date_default_timezone_set('Asia/Jakarta');
+echo date('d-m-Y H:i:s');
+?>
+
                         <p class="mt-10">Segera lakukan pembayaran<br> Sebelum batas waktu yang ditentukan Ya.</p>
                         <a href="accommodation.php" class="btn border-btn">Pesan Lagi <i class="ti-angle-left"></i></a>
-                        <a href="cetakpdf.php?no_pesan=<?= $_GET['no_pesan'] ?>" class="btn border-btn" target='_blank'>Cetak Bukti Pesanan <i class="ti-angle-left"></i></a>
+                        <a href="cetakpdf.php?no_pesan=<?= $_GET['no_pesan'] ?>" class="btn border-btn" target='_blank'>Cetak Bukti Pesanan <i class="ti-angle-left"></i></a><br><br>
                         <form method="post" action="">
                             <input name="kirim" type="submit" class="btn more-btn" id="kirim" value="Kirim via WhatsApp">
                         </form>
@@ -136,6 +143,3 @@ if (isset($_POST['kirim'])) {
     echo "<script>window.location = 'https://api.whatsapp.com/send?phone=$phone&text=%2ADetail%20Pesanan%20Anda%2A%0D%0A%0D%0A%2ATanggal%20Pesan%2A%20%3A$tgl_pesan%20%0D%0A%2ANomor%20Pesan%2A%20%3A%20$no_pesan%20%0D%0A%2ANama%2A%20%3A%20$nama%20%0D%0A%2AEmail%2A%20%3A%20$email%20%0D%0A%2APhone%2A%20%3A%20$phone%0D%0A%2AKota%2A%20%3A%20$kota%0D%0A%2AAlamat%2A%20%3A%20$alamat%0D%0A%2ATanggal%20Cekin%2A%20%3A%20$tgl_cekin%20%20%0D%0A%2ATanggal%20Cekout%2A%20%3A%20$tgl_cekout%20%0D%0A%2ATipe%20Kamar%2A%20%3A%20$tipe_kamar%20%20%0D%0A%2ABooking%2A%20%3A%20$nm_kamar&source=&data='</script> ";
 }
 ?>
-<!-- <form method="post" action="">
-<input name="kirim" type="submit"  class="btn more-btn1" id="kirim" value="Kirim">
-</form> -->

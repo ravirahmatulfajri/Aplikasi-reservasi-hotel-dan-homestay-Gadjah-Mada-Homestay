@@ -38,12 +38,13 @@ if (isset($_POST['checking_room'])) {
 		$tglco = strtotime(date($tgl_checkout));
 
 		header("location: index.php?menu=register&in=$tglci&out=$tglco&id=$id");
-
+		
 		exit;
 	} else {
-
-		header("location: index.php?menu=reservations&id=$id");
-
+			
+		
+		include("index.php");
+		echo "<SCRIPT> alert('Maaf, Masukkan Tanggal Reservations !! !'); history.back(); </SCRIPT>";
 		exit;
 	}
 }

@@ -14,7 +14,7 @@ $preloader_start = "Homestay";
 
 $host = "smtp.gmail.com";
 $username = "ravirahmatul01@gmail.com";
-$password = ".........";
+$password = "asus091099";
 $email_from = "ravirahmatul01@gmail.com";
 $email_from_name = "Ravi";
 
